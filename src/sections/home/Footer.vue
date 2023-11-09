@@ -1,12 +1,20 @@
 <template>
   <div class="container-wider pl-5 pr-10 dim flex flex-col">
-    <div class="mb-16 flex flex-row justify-between">
+    <div
+      class="mb-16 flex flex-col lg:mx-0 mx-auto lg:flex-row justify-between"
+    >
       <div class="flex flex-col">
-        <h4 class="mt-3 mb-1 text-2xl font-semibold tracking-wide">
+        <h4
+          class="lg:mx-0 mx-auto mt-3 mb-1 text-2xl font-semibold tracking-wide"
+        >
           {{ footer.callToAction }}
         </h4>
-        <p class="mb-6 tracking-wide">{{ footer.socialMedia.businessTime }}</p>
-        <div class="flex gap-2">
+        <p
+          class="lg:max-w-xl xs:max-w-md lg:mx-0 mx-auto max-w-sm mb-6 tracking-wide text-center"
+        >
+          {{ footer.socialMedia.businessTime }}
+        </p>
+        <div class="flex gap-2 lg:mx-0 mx-auto">
           <div v-for="icon in footer.socialMedia.icons" :key="icon.id">
             <a :href="icon.url" target="_blank" class="cursor-pointer">
               <div
@@ -18,7 +26,7 @@
           </div>
         </div>
       </div>
-      <div class="flex gap-28">
+      <div class="lg:mt-0 mt-8 lg:mx-0 mx-auto flex gap-28">
         <div v-for="footerLink in footer.footerLinks" :key="footerLink.id">
           <h5 class="uppercase text-sm font-semibold tracking-wider">
             {{ footerLink.title }}

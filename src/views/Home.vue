@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="w-full">
     <div class="w-full sticky top-0 z-50 shadow-md bg-tertiary-white">
       <Navbar />
     </div>
@@ -37,11 +37,11 @@
         </div>
       </div>
     </div>
-    <div class="bg-background-gray">
-      <div class="w-full -translate-y-72">
+    <div class="bg-background-gray back-img">
+      <div class="w-full md:-translate-y-72 -translate-y-96">
         <BeautifulExamplePages />
       </div>
-      <div class="w-full mt-20">
+      <div class="w-full mt-20 lg:ml-0 ml-10">
         <OpenSource />
       </div>
       <div class="w-full translate-y-32">
@@ -68,10 +68,10 @@ import {
   Footer,
 } from "../sections/home";
 
-import { triangle } from "../assets/home";
+import { triangle, githubIcon } from "../assets/home";
 export default {
   data() {
-    return { triangle };
+    return { triangle, githubIcon };
   },
   components: {
     Navbar,
@@ -87,3 +87,8 @@ export default {
   },
 };
 </script>
+<style>
+.back-img {
+  /* background-image: url("../assets/home/icons/github-icon.svg"); */
+}
+</style>

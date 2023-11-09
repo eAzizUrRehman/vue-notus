@@ -2,7 +2,7 @@
   <a
     :href="href"
     target="_blank"
-    class="px-8 py-4 rounded border-none outline-none text-white text-sm tracking-wider font-semibold uppercase"
+    class="bg-black md:px-8 px-4 md:py-4 py-2 rounded border-none outline-none text-white md:text-sm text-xs tracking-wider font-semibold uppercase text-center"
     :class="color.length ? 'bg-black' : ''"
   >
     {{ text ? text : "Click Me" }}

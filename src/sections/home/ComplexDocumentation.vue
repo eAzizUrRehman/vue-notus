@@ -1,9 +1,9 @@
 <template>
-  <div class="container-tighter flex">
-    <div class="w-1/3">
+  <div class="container-tighter flex lg:flex-row flex-col gap-32">
+    <div class="lg:w-1/3 w-fit lg:mx-0 mx-auto  ">
       <ContentDetailsCard :component="complexDocumentation" />
     </div>
-    <div class="w-2/3 pl-32">
+    <div class="lg:w-2/3 w-full lg:mr-0 pr-10">
       <img
         :src="badge"
         alt=""

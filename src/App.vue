@@ -4,7 +4,6 @@
   </div>
 </template>
 
-
 <style>
 ::-webkit-scrollbar {
   width: 6px;
@@ -17,12 +16,17 @@
 ::-webkit-scrollbar-track:hover {
   background-color: #ffffff;
 }
+* {
+  box-sizing: border-box;
+}
 .container-wider {
   margin: 0 auto;
+  padding: 0 30px;
   max-width: 1250px;
 }
 .container-tighter {
   margin: 0 auto;
+  padding: 0 30px;
   max-width: 1100px;
 }
 .dim {

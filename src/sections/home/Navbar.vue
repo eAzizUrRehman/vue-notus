@@ -1,6 +1,6 @@
 <template>
   <header
-    class="container-wider h-16 py-5 flex justify-between items-stretch bg-tertiary-white text-sm uppercase"
+    class="container-wider w-full h-16 py-5 flex justify-between items-stretch bg-tertiary-white text-sm uppercase"
   >
     <div class="flex gap-4">
       <router-link
@@ -25,101 +25,82 @@
       </div>
     </div>
 
-    <div class="flex justify-center items-center gap-5">
-      <router-link
-        :to="{
-          name: 'demo-pages',
-        }"
-        class="inline-flex items-center px-2 h-full transition-colors text-xs font-bold hover:text-hover-gray duration-100 ease-in-out transform cursor-pointer"
-      >
-        Demo Pages
-      </router-link>
-      <div>
-        <ul class="flex justify-center items-center gap-5">
-          <li>
-            <a
-              href="https://www.facebook.com/SignupSolution.official/"
-              target="_blank"
-            >
-              <img
-                :src="facebookIcon"
-                alt=""
-                width="19"
-                class="cursor-pointer hover:scale-125 transform transition-transform duration-100 ease-in-out"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/SignupSolution.official/"
-              target="_blank"
-            >
-              <img
-                :src="twitterIcon"
-                alt=""
-                width="19"
-                class="cursor-pointer hover:scale-125 transform transition-transform duration-100 ease-in-out"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/SignupSolution.official/"
-              target="_blank"
-            >
-              <img
-                :src="githubIcon"
-                alt=""
-                width="19"
-                class="cursor-pointer hover:scale-125 transform transition-transform duration-100 ease-in-out"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <router-link
-          :to="{
-            name: 'download',
-          }"
-          class="font-medium text-tertiary-white text-xs"
-        >
+    <div class="hidden md:flex justify-center items-center gap-5">
+      <NavbarIcons />
+      <DownloadButton />
+    </div>
+    <div
+      class="dim my-auto block md:hidden cursor-pointer"
+      @click="showSidebar = true"
+    >
+      <img :src="hamburgerIcon" alt="" class="w-6" />
+    </div>
+
+    <div class="modal-overlay block md:hidden" v-if="showSidebar">
       <div
-        class="bg-secondary-green rounded py-2 px-4 cursor-pointer hover:shadow-lg transition-transform duration-1000 ease-in-out transform    "
+        class="w-72 h-[100vh] m-0 bg-background-gray text-tertiary-white tracking-widest"
       >
-        
-          <img
-            :src="downloadIcon"
-            alt=""
-            width="12"
-            class="cursor-pointer hover:scale-125 transform transition-transform duration-100 ease-in-out inline mr-0.5"
-          />
-          Download
+        <img
+          :src="closeIcon"
+          alt=""
+          class="w-8 mt-4 ml-4"
+          @click="showSidebar = false"
+        />
+        <div class="pt-10 px-16 flex flex-col justify-start gap-6">
+          <DemoPages />
+          <NavbarIcons />
+          <DownloadButton />
         </div>
-        </router-link>
+      </div>
     </div>
   </header>
 </template>
 <script>
 import {
-  downloadIcon,
   facebookIcon,
   fileIcon,
   githubIcon,
   twitterIcon,
+  hamburgerIcon,
+  closeIcon,
 } from "../../assets/home";
-import Button from "../../components/Button.vue";
+import {
+  Button,
+  DownloadButton,
+  NavbarIcons,
+  DemoPages,
+} from "../../components";
 export default {
   data() {
     return {
-      downloadIcon,
       facebookIcon,
       fileIcon,
       githubIcon,
       twitterIcon,
+      hamburgerIcon,
+      closeIcon,
+      showSidebar: false,
     };
   },
   components: {
     Button,
+    DownloadButton,
+    NavbarIcons,
+    DemoPages,
   },
 };
 </script>
+<style scoped>
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  backdrop-filter: blur(5px);
+}
+</style>

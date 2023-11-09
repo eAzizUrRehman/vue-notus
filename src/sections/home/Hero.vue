@@ -1,14 +1,14 @@
 <template>
   <div
-    class="container-wider max-w-1/2 h-screen max-h-[860px] bg-white flex justify-between items-center"
+    class="container-wider max-w-1/2 h-screen max-h-[860px] bg-white flex   justify-between items-center"
   >
     <div class="flex flex-col justify-start items-start w-[71rem]">
       <h1
-        class="dim w-11/12 text-3xl font-semibold tracking-wide leading-normal"
+        class="dim max-w-xl text-3xl font-semibold tracking-wide leading-normal"
       >
         {{ hero.title }}
       </h1>
-      <p class="mt-4 mb-10 text-md tracking-wide leading-relaxed">
+      <p class="mt-4 max-w-xl mb-10 text-md tracking-wide leading-relaxed">
         <span class="dim">
           {{ hero.description1 }}
         </span>
@@ -25,7 +25,7 @@
         <Button :text="hero.buttonText2" bgColor="334155" href="/" />
       </div>
     </div>
-    <div class="w-full">
+    <div class="w-full hidden lg:block">
       <img :src="heroImg" alt="" class="object-cover translate-x-12" />
     </div>
   </div>

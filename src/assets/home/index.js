@@ -46,6 +46,8 @@ import footerFacebookIcon from "./icons/footer-facebook-icon.svg";
 import footerDribbbleIcon from "./icons/footer-dribbble-icon.svg";
 import footerGithubIcon from "./icons/footer-github-icon.svg";
 import triangle from "./icons/triangle.svg";
+import hamburgerIcon from "./icons/hamburgur-icon.svg";
+import closeIcon from "./icons/close-icon.svg";
 
 export {
   heroImg,
@@ -96,4 +98,6 @@ export {
   footerDribbbleIcon,
   footerGithubIcon,
   triangle,
+  hamburgerIcon,
+  closeIcon,
 };

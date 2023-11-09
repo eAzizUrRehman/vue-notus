@@ -1,9 +1,9 @@
 <template>
   <div
-    class="max-w-[1280px] px-60 py-20 mx-auto flex flex-col items-center bg-tertiary-white rounded-xl translate-y-32 shadow-xl"
+    class="xl:max-w-[1250px] lg:max-w-[980px] md:max-w-[720px] xs:max-w-[680px] max-w-[380px] xl:px-60 lg:px-44 md:px-32 px-16 lg:py-20 py-10 mx-auto flex flex-col items-center bg-tertiary-white rounded-xl translate-y-32 shadow-xl"
   >
     <span class="text-5xl">😍</span>
-    <h4 class="my-4 text-2xl font-bold tracking-wide">
+    <h4 class="my-4 text-2xl font-bold tracking-wide text-center">
       {{ starterKit.title }}
     </h4>
     <p class="text-center">
