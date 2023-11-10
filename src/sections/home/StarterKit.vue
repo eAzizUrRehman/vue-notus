@@ -10,8 +10,8 @@
       {{ starterKit.description }}
     </p>
     <div class="mt-8 flex gap-2">
-      <Button :text="starterKit.buttonText1" />
-      <Button :text="starterKit.buttonText2" />
+      <Button :text="starterKit.button1Text" :bgColor="starterKit.button1Color" />
+      <Button :text="starterKit.button2Text" :bgColor="starterKit.button2Color" :icon="starterKit.button2Icon"/>
     </div>
   </div>
 </template>

@@ -30,6 +30,7 @@ import downloadIcon from "./icons/download-icon.svg";
 import facebookIcon from "./icons/facebook-icon.svg";
 import fileIcon from "./icons/file-icon.svg";
 import githubIcon from "./icons/github-icon.svg";
+import githubButtonIcon from "./icons/github-button-icon.svg";
 import twitterIcon from "./icons/twitter-icon.svg";
 import curve from "./icons/curve.svg";
 import sitemapIcon from "./icons/sitemap-icon.svg";
@@ -82,6 +83,7 @@ export {
   facebookIcon,
   fileIcon,
   githubIcon,
+  githubButtonIcon,
   twitterIcon,
   curve,
   sitemapIcon,

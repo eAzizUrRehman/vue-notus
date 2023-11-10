@@ -1,8 +1,10 @@
 <template>
   <div
-    class="container-wider max-w-1/2 h-screen max-h-[860px] bg-white flex   justify-between items-center"
+    class="container-wider max-w-1/2 h-screen max-h-[860px] bg-white flex justify-between items-center lg:scale-100 sm:scale-110 scale-100"
   >
-    <div class="flex flex-col justify-start items-start w-[71rem]">
+    <div
+      class="flex flex-col justify-start items-start w-[71rem] lg:px-0 md:px-20 sm:pl-10 px-5"
+    >
       <h1
         class="dim max-w-xl text-3xl font-semibold tracking-wide leading-normal"
       >
@@ -21,12 +23,16 @@
       </p>
 
       <div class="dim flex justify-start items-center gap-1.5">
-        <Button :text="hero.buttonText1" bgColor="bg-[#10B981}" href="/" />
+        <Button :text="hero.buttonText1" bgColor="10B981" href="/" />
         <Button :text="hero.buttonText2" bgColor="334155" href="/" />
       </div>
     </div>
     <div class="w-full hidden lg:block">
-      <img :src="heroImg" alt="" class="object-cover translate-x-12" />
+      <img
+        :src="heroImg"
+        alt=""
+        class="object-cover translate-x-24 scale-110"
+      />
     </div>
   </div>
 </template>
@@ -52,5 +58,3 @@ export default {
   },
 };
 </script>
-
-<style></style>

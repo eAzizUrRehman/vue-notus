@@ -1,6 +1,6 @@
 <template>
   <div
-    class="ml-1 h-12 w-12 rounded-full bg-tertiary-white shadow-xl flex justify-center items-center"
+    class="ml-1 h-12 w-12 rounded-full bg-tertiary-white shadow-xl flex-center"
   >
     <img :src="contentCard.iconUrl" alt="" class="w-4" />
   </div>

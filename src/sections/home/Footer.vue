@@ -1,7 +1,7 @@
 <template>
   <div class="container-wider pl-5 pr-10 dim flex flex-col">
     <div
-      class="mb-16 flex flex-col lg:mx-0 mx-auto lg:flex-row justify-between"
+      class="mb-16 flex lg:flex-row flex-col lg:mx-0 mx-auto justify-between lg:scale-100 md:scale-125 sm:scale-110 scale-100"
     >
       <div class="flex flex-col">
         <h4
@@ -18,7 +18,7 @@
           <div v-for="icon in footer.socialMedia.icons" :key="icon.id">
             <a :href="icon.url" target="_blank" class="cursor-pointer">
               <div
-                class="w-10 h-10 rounded-full shadow-lg flex justify-center items-center bg-tertiary-white"
+                class="w-10 h-10 rounded-full shadow-lg flex-center bg-tertiary-white"
               >
                 <img :src="icon.icon" alt="" class="w-4" />
               </div>
@@ -26,7 +26,7 @@
           </div>
         </div>
       </div>
-      <div class="lg:mt-0 mt-8 lg:mx-0 mx-auto flex gap-28">
+      <div class="lg:mt-0 mt-8 lg:mx-0 mx-auto flex sm:gap-28 gap-16">
         <div v-for="footerLink in footer.footerLinks" :key="footerLink.id">
           <h5 class="uppercase text-sm font-semibold tracking-wider">
             {{ footerLink.title }}

@@ -20,9 +20,12 @@ export default {
         "navbar-gray": "#212529",
         "navbar-text": "#AFB0B2",
         "sidebar-green": "#F5F7F9",
-        "sidebar-text": "",
+        "sidebar-text": "#4c555a",
         "background-white": "#ffffff",
         "center-text": "",
+      },
+      aspectRatio: {
+        "13/10": "13 / 10",
       },
     },
   },

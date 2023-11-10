@@ -4,26 +4,22 @@
       <Navbar />
     </div>
     <div class="docs-container">
-      <!-- <div class="max-w-[20%]">
-  <Sidebar />
-</div> -->
+      <div class="max-w-[20%]">
+        <Sidebar />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import {
-  Navbar,
-
-  // Sidebar
-} from "../sections/docs";
+import { Navbar, Sidebar } from "../sections/docs";
 export default {
   data() {
     return {};
   },
   components: {
     Navbar,
-    // Sidebar,
+    Sidebar,
   },
 };
 </script>

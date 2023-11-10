@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="w-full overflow-hidden">
     <div class="w-full sticky top-0 z-50 shadow-md bg-tertiary-white">
       <Navbar />
     </div>
@@ -7,7 +7,7 @@
       <Hero />
     </div>
 
-    <div class="">
+    <div>
       <svg
         class="overflow-hidden"
         xmlns="http://www.w3.org/2000/svg"
@@ -26,22 +26,24 @@
         <div class="w-full -translate-y-16">
           <Content />
         </div>
-        <div class="w-full mt-20 mb-60">
+        <div class="w-full sm:mt-20 mt-0 sm:mb-60 mb-32">
           <CSSComponents />
         </div>
         <div class="w-full">
           <JavascriptComponents />
         </div>
-        <div class="w-full mt-60">
+        <div class="w-full sm:mt-60 mt-32">
           <ComplexDocumentation />
         </div>
       </div>
     </div>
-    <div class="bg-background-gray back-img">
-      <div class="w-full md:-translate-y-72 -translate-y-96">
+    <div class="bg-background-gray github-background-img">
+      <div
+        class="w-full lg:-translate-y-72 -translate-y-96 md:block inline-block"
+      >
         <BeautifulExamplePages />
       </div>
-      <div class="w-full mt-20 lg:ml-0 ml-10">
+      <div class="w-full lg:ml-40 sm:ml-20">
         <OpenSource />
       </div>
       <div class="w-full translate-y-32">
@@ -68,10 +70,10 @@ import {
   Footer,
 } from "../sections/home";
 
-import { triangle, githubIcon } from "../assets/home";
+import { triangle } from "../assets/home";
 export default {
   data() {
-    return { triangle, githubIcon };
+    return { triangle };
   },
   components: {
     Navbar,
@@ -87,8 +89,3 @@ export default {
   },
 };
 </script>
-<style>
-.back-img {
-  /* background-image: url("../assets/home/icons/github-icon.svg"); */
-}
-</style>

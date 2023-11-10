@@ -25,28 +25,32 @@
       </div>
     </div>
 
-    <div class="hidden md:flex justify-center items-center gap-5">
+    <div class="hidden md:flex-center gap-5">
       <NavbarIcons />
       <DownloadButton />
     </div>
     <div
       class="dim my-auto block md:hidden cursor-pointer"
-      @click="showSidebar = true"
+      @click="openSidebar"
     >
       <img :src="hamburgerIcon" alt="" class="w-6" />
     </div>
 
-    <div class="modal-overlay block md:hidden" v-if="showSidebar">
+    <div
+      class="modal-overlay block md:hidden"
+      @click.self="closeSidebar"
+      v-if="showSidebar"
+    >
       <div
-        class="w-72 h-[100vh] m-0 bg-background-gray text-tertiary-white tracking-widest"
+        class="sm:w-72 w-60 h-[100vh] m-0 bg-background-gray text-tertiary-white tracking-widest  "
       >
         <img
           :src="closeIcon"
           alt=""
           class="w-8 mt-4 ml-4"
-          @click="showSidebar = false"
+          @click="closeSidebar"
         />
-        <div class="pt-10 px-16 flex flex-col justify-start gap-6">
+        <div class="pt-10 sm:px-16 px-12 flex flex-col justify-start gap-6">
           <DemoPages />
           <NavbarIcons />
           <DownloadButton />
@@ -87,6 +91,16 @@ export default {
     DownloadButton,
     NavbarIcons,
     DemoPages,
+  },
+  methods: {
+    openSidebar() {
+      this.showSidebar = true;
+      document.body.classList.add("overflow-hidden");
+    },
+    closeSidebar() {
+      this.showSidebar = false;
+      document.body.classList.remove("overflow-hidden");
+    },
   },
 };
 </script>

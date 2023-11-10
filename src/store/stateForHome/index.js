@@ -25,6 +25,7 @@ import {
   svelte,
   vueJS,
   rightArrowsIcon,
+   githubButtonIcon
 } from "../../assets/home";
 
 export const hero = {
@@ -225,8 +226,11 @@ export const starterKit = {
   title: "Do you love this Starter Kit?",
   description:
     "Cause if you do, it can be yours now. Hit the buttons below to navigate to get the Free version for your next project. Build a new web app or give an old project a new look!",
-  buttonText1: "Get Started",
-  buttonText2: "Help with a star",
+  button1Text: "Get Started",
+  button2Text: "Help with a star",
+  button2Icon: githubButtonIcon,
+  button1Color: "10B981",
+  button2Color: "334155",
 };
 export const footer = {
   id: "footer",

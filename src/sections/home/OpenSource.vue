@@ -1,5 +1,7 @@
 <template>
-  <div class="container-tighter text-tertiary-white">
+  <div
+    class="container-tighter text-tertiary-white lg:scale-125 md:scale-110 scale-100"
+  >
     <ContentDetailsCard :component="openSource" />
   </div>
 </template>

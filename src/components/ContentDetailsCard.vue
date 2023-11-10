@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-16 w-16 rounded-full bg-tertiary-white shadow-xl flex justify-center items-center"
+    class="h-16 w-16 rounded-full bg-tertiary-white shadow-xl flex-center"
   >
     <img :src="component.iconUrl" alt="" class="w-7" />
   </div>

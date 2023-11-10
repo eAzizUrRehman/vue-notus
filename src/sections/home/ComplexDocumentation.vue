@@ -1,13 +1,15 @@
 <template>
-  <div class="container-tighter flex lg:flex-row flex-col gap-32">
-    <div class="lg:w-1/3 w-fit lg:mx-0 mx-auto  ">
+  <div class="container-tighter flex lg:flex-row flex-col sm:gap-32 gap-16">
+    <div
+      class="lg:w-1/3 w-fit lg:mx-0 mx-auto lg:scale-100 md:scale-125 sm:scale-110 scale-100"
+    >
       <ContentDetailsCard :component="complexDocumentation" />
     </div>
-    <div class="lg:w-2/3 w-full lg:mr-0 pr-10">
+    <div class="lg:w-2/3 w-full my-auto lg:mr-0 pr-10">
       <img
         :src="badge"
         alt=""
-        class=" rounded-lg shadow-xl"
+        class="rounded-lg shadow-xl"
         style="transform: scale(1) perspective(1040px) rotateY(-11deg)"
       />
     </div>

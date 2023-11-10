@@ -10,7 +10,7 @@ import {
   starterKit,
   footer,
 } from "./stateForHome";
-// import sidebar from "./stateForDocs";
+import sidebar from "./stateForDocs";
 
 export default {
   // Home
@@ -26,5 +26,5 @@ export default {
   footer,
 
   //docs
-  // sidebar
+  sidebar
 };

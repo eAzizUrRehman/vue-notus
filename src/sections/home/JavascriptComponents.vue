@@ -1,6 +1,10 @@
 <template>
-  <div class="container-tighter flex items-end">
-    <div class="w-1/2 grid lg:grid-cols-2 grid-cols-1 lg:gap-6 gap-0">
+  <div
+    class="container-tighter h-full flex sm:flex-row flex-col-reverse items-end"
+  >
+    <div
+      class="sm:w-1/2 w-full sm:mx-0 mx-auto grid lg:grid-cols-2 grid-cols-1 lg:gap-6 gap-0"
+    >
       <div v-for="column in javascriptComponents.columns" :key="column.id">
         <div
           v-for="card in column.cards"
@@ -19,14 +23,18 @@
               alt=""
               class="lg:w-16 w-12 lg:h-16 h-12 rounded-full"
             />
-            <h4 class="lg:mt-4 mt-3 lg:text-base text-xs font-semibold text-tertiary-white tracking-wider">
+            <h4
+              class="lg:mt-4 mt-3 lg:text-base text-xs font-semibold text-tertiary-white tracking-wider"
+            >
               {{ card.title }}
             </h4>
           </div>
         </div>
       </div>
     </div>
-    <div class="w-1/2 lg:pl-40 md:pl-20 pl-10 lg:pb-10 pb-0 my-auto">
+    <div
+      class="sm:w-1/2 w-fit sm:mx-0 mx-auto lg:pl-40 md:pl-20 sm:pl-10 pl-0 lg:pb-10 pb-0 my-auto sm:mb-auto mb-32 sm:scale-100 scale-110 "
+    >
       <ContentDetailsCard :component="javascriptComponents" />
     </div>
   </div>

@@ -20,7 +20,7 @@
     <div
       class="lg:w-1/2 w-full grid sm:grid-cols-2 grid-cols-1 gap-x-20 gap-y-10 px-10 py-28 mx-auto"
     >
-      <div v-for="contentCard in contentCards" :key="contentCard.id" class="">
+      <div v-for="contentCard in contentCards" :key="contentCard.id" >
         <ContentCard :contentCard="contentCard" />
       </div>
     </div>

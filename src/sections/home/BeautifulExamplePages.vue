@@ -9,7 +9,7 @@
       </p>
     </div>
     <div
-      class="container-wider px-6 flex lg:flex-row flex-col justify-center items-center lg:gap-8 gap-16 "
+      class="container-wider px-6 flex lg:flex-row flex-col justify-center items-center lg:gap-8 gap-16"
     >
       <div
         v-for="page in beautifulExamplePages.pages"
