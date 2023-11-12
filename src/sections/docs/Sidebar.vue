@@ -1,20 +1,21 @@
 <template>
-  <div class="pt-6 text-sidebar-text bg-sidebar-green">
+  {{ sidebar.subtopics }}
+  <div class="pt-6 text-sidebar-text">
     <div class="flex justify-start items-center gap-2">
       <img :src="vueLogo" alt="" width="25" />
       <h1 class="font-extrabold text-lg">Vue Notus</h1>
     </div>
-    <div class="max-h-[100dvh] overflow-y-auto">
+    <div class="max-h-[83dvh] overflow-y-auto">
       <div v-for="topic in sidebar.topics" :key="topic.id">
-        <h2 class="font-bold text-sm mt-6">{{ topic.title }}</h2>
+        <h2 class="font-bold text-sm mt-6">{{ topic.label }}</h2>
         <ul>
           <li
             v-for="subtopic in topic.subtopics"
             :key="subtopic.id"
-            class="text-sm mt-1"
+            class="text-sm my-2.5 tracking-wide"
           >
             <router-link :to="subtopic.link">
-              {{ subtopic.title }}
+              {{ subtopic.label }}
             </router-link>
           </li>
         </ul>
@@ -25,17 +26,22 @@
 
 <script>
 import { vueLogo } from "../../assets/docs";
-import store from "../../store";
+import overview from "../../store/stateForDocs/gettingStarted/overview";
 export default {
   data() {
-    return {
-      vueLogo,
-    };
+    return { overview, vueLogo };
   },
   computed: {
     sidebar() {
-      return store.state.sidebar;
+      return this.$store.state.sidebar;
     },
   },
 };
 </script>
+<style scoped>
+.router-link-active {
+  padding-left: 6px;
+  color: #2f99e5;
+  border-left: 3px solid #2f99e5;
+}
+</style>

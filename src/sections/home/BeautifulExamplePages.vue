@@ -36,7 +36,6 @@
 
 <script>
 import { ContentDetailsCard } from "../../components";
-import store from "../../store";
 export default {
   data() {
     return {};
@@ -44,7 +43,7 @@ export default {
   components: { ContentDetailsCard },
   computed: {
     beautifulExamplePages() {
-      return store.state.beautifulExamplePages;
+      return this.$store.state.beautifulExamplePages;
     },
   },
 };

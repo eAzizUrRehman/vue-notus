@@ -1,11 +1,7 @@
 <template>
   <div class="w-full overflow-hidden">
-    <div class="w-full sticky top-0 z-50 shadow-md bg-tertiary-white">
-      <Navbar />
-    </div>
-    <div class="w-full">
+    
       <Hero />
-    </div>
 
     <div>
       <svg
@@ -58,7 +54,6 @@
 
 <script>
 import {
-  Navbar,
   Hero,
   Content,
   CSSComponents,
@@ -76,7 +71,6 @@ export default {
     return { triangle };
   },
   components: {
-    Navbar,
     Hero,
     Content,
     CSSComponents,

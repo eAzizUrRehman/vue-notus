@@ -8,7 +8,7 @@
 
 <script>
 import { ContentDetailsCard } from "../../components";
-import store from "../../store";
+ 
 export default {
   data() {
     return {};
@@ -16,7 +16,7 @@ export default {
   components: { ContentDetailsCard },
   computed: {
     openSource() {
-      return store.state.openSource;
+      return this.$store.state.openSource;
     },
   },
 };

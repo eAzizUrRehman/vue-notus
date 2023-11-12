@@ -53,14 +53,14 @@
 </template>
 
 <script>
-import store from "../../store";
+ 
 export default {
   data() {
     return {};
   },
   computed: {
     footer() {
-      return store.state.footer;
+      return this.$store.state.footer;
     },
   },
 };

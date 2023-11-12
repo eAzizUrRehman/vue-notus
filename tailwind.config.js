@@ -22,7 +22,9 @@ export default {
         "sidebar-green": "#F5F7F9",
         "sidebar-text": "#4c555a",
         "background-white": "#ffffff",
-        "center-text": "",
+        "center-title-border": "#5E72E4",
+        "center-text": "#3B454E",
+        "center-link": "#5e72e4",
       },
       aspectRatio: {
         "13/10": "13 / 10",

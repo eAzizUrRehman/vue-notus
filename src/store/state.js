@@ -26,5 +26,5 @@ export default {
   footer,
 
   //docs
-  sidebar
+  sidebar,
 };

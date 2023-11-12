@@ -5,6 +5,10 @@ import DemoPages from "./DemoPages.vue";
 import DownloadButton from "./DownloadButton.vue";
 import NavbarIcons from "./NavbarIcons.vue";
 
+//docs
+import CentralContentHeader from "./docs/CentralContentHeader.vue";
+import OverviewCard from "./docs/overview/OverviewCard.vue";
+
 export {
   Button,
   ContentCard,
@@ -12,4 +16,8 @@ export {
   DemoPages,
   DownloadButton,
   NavbarIcons,
+
+  //docs
+  CentralContentHeader,
+  OverviewCard,
 };

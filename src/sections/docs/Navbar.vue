@@ -1,17 +1,17 @@
 <template>
-  <div class="docs-container text-white py-4 flex justify-between items-center">
+  <header class="docs-container text-white py-4 flex justify-between items-center">
     <div class="flex justify-between items-center gap-8 w-fit">
       <div class="flex justify-between gap-3 w-fit">
         <router-link
           :to="{ name: 'home' }"
-          class="dim items-center font-medium text-sm uppercase cursor-pointer"
+          class="dim   font-medium text-sm uppercase cursor-pointer"
         >
           Creative Tim
         </router-link>
         <div class="dim pr-[2px] my-0.5 bg-white"></div>
         <router-link
           :to="{ name: 'docs' }"
-          class="dim items-center font-medium text-sm uppercase cursor-pointer"
+          class="dim   font-medium text-sm uppercase cursor-pointer"
         >
           Docs
         </router-link>
@@ -32,7 +32,7 @@
     <router-link :to="{ name: 'download' }" class="dim text-sm cursor-pointer">
       Download Free
     </router-link>
-  </div>
+  </header>
 </template>
 
 <script>

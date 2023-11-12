@@ -1,8 +1,7 @@
-import Home from "./Home.vue";
-import Docs from "./Docs.vue";
-import DemoPages from "./DemoPages.vue";
-import Download from "./Download.vue";
-import LivePreview from "./LivePreview.vue";
-import Support from "./Support.vue";
-
-export { Home, Docs, DemoPages, Download, LivePreview, Support };
+export const Home = () => import("./Home.vue");
+export const Docs = () => import("./Docs.vue");
+export const DemoPages = () => import("./DemoPages.vue");
+export const Download = () => import("./Download.vue");
+export const LivePreview = () => import("./LivePreview.vue");
+export const Support = () => import("./Support.vue");
+export const NotFound = () => import("./NotFound.vue");

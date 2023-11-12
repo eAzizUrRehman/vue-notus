@@ -1,4 +1,3 @@
-import Navbar from "./Navbar.vue";
 import Hero from "./Hero.vue";
 import Content from "./Content.vue";
 import CSSComponents from "./CSSComponents.vue";
@@ -10,7 +9,6 @@ import StarterKit from "./StarterKit.vue";
 import Footer from "./Footer.vue";
 
 export {
-  Navbar,
   Hero,
   Content,
   CSSComponents,

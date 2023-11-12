@@ -36,8 +36,18 @@
   }
   .docs-container {
     margin: 0 auto;
-    max-width: 1320px;
+    max-width: 1355px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
+  .docs-content-padding {
+    padding-left: 52px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  
+
   .flex-center {
     display: flex;
     justify-content: center;

@@ -40,7 +40,7 @@
 <script>
 import { Button } from "../../components";
 import { heroImg } from "../../assets/home";
-import store from "../../store";
+ 
 
 export default {
   data() {
@@ -53,7 +53,7 @@ export default {
   },
   computed: {
     hero() {
-      return store.state.hero;
+      return this.$store.state.hero;
     },
   },
 };

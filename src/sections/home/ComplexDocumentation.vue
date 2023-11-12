@@ -19,7 +19,7 @@
 <script>
 import { badge } from "../../assets/home";
 import { ContentDetailsCard } from "../../components";
-import store from "../../store";
+ 
 export default {
   data() {
     return { badge };
@@ -27,7 +27,7 @@ export default {
   components: { ContentDetailsCard },
   computed: {
     complexDocumentation() {
-      return store.state.complexDocumentation;
+      return this.$store.state.complexDocumentation;
     },
   },
 };

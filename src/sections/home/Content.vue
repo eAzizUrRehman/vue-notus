@@ -30,7 +30,7 @@
 <script>
 import { ContentCard } from "../../components";
 import { laptop } from "../../assets/home";
-import store from "../../store";
+ 
 
 export default {
   data() {
@@ -43,10 +43,10 @@ export default {
   },
   computed: {
     contentCards() {
-      return store.state.contentCards;
+      return this.$store.state.contentCards;
     },
     contentBanner() {
-      return store.state.contentBanner;
+      return this.$store.state.contentBanner;
     },
   },
 };

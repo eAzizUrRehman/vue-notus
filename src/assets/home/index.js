@@ -1,6 +1,9 @@
 import heroImg from "./hero-img.png";
 import laptop from "./laptop.jpg";
 
+// 404
+import Img404 from "./img-404.jpg";
+
 // css-components
 import excellentServices from "./css-components/excellent-services.png";
 import github from "./css-components/github.png";
@@ -54,6 +57,9 @@ export {
   heroImg,
   laptop,
 
+  // 404
+  Img404,
+  
   // css-components
   excellentServices,
   github,

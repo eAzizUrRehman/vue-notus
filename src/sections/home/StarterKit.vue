@@ -18,7 +18,7 @@
 
 <script>
 import { ContentDetailsCard, Button } from "../../components";
-import store from "../../store";
+ 
 export default {
   data() {
     return {};
@@ -26,7 +26,7 @@ export default {
   components: { ContentDetailsCard, Button },
   computed: {
     starterKit() {
-      return store.state.starterKit;
+      return this.$store.state.starterKit;
     },
   },
 };

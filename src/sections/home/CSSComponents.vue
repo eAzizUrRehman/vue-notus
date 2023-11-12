@@ -6,7 +6,7 @@
       <ContentDetailsCard :component="cssComponents" />
     </div>
     <div
-      class="lg:mx-0 mx-auto px-20 lg:w-1/2 md:w-[38rem] sm:w-[35rem] w-[20rem] aspect-[13/10] relative block lg:mt-0 mt-20  "
+      class="lg:mx-0 mx-auto px-20 lg:w-1/2 md:w-[38rem] sm:w-[35rem] w-[20rem] aspect-[13/10] relative block lg:mt-0 mt-20"
     >
       <img
         :src="excellentServices"
@@ -21,7 +21,7 @@
       <img
         :src="rominaHadid"
         alt=""
-        class="shadow-lg absolute lg:w-48 md:w-60 sm:w-52 w-32 right-0 lg:top-0 md:-top-6 rounded-lg "
+        class="shadow-lg absolute lg:w-48 md:w-60 sm:w-52 w-32 right-0 lg:top-0 md:-top-6 rounded-lg"
       />
       <img
         :src="freeRevision"
@@ -52,7 +52,7 @@ import {
   freeRevision,
 } from "../../assets/home";
 import { ContentDetailsCard } from "../../components";
-import store from "../../store";
+
 export default {
   data() {
     return {
@@ -69,7 +69,7 @@ export default {
   },
   computed: {
     cssComponents() {
-      return store.state.cssComponents;
+      return this.$store.state.cssComponents;
     },
   },
 };

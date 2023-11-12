@@ -42,7 +42,7 @@
       v-if="showSidebar"
     >
       <div
-        class="sm:w-72 w-60 h-[100vh] m-0 bg-background-gray text-tertiary-white tracking-widest  "
+        class="sm:w-72 w-60 h-[100vh] m-0 bg-background-gray text-tertiary-white tracking-widest"
       >
         <img
           :src="closeIcon"
@@ -67,13 +67,8 @@ import {
   twitterIcon,
   hamburgerIcon,
   closeIcon,
-} from "../../assets/home";
-import {
-  Button,
-  DownloadButton,
-  NavbarIcons,
-  DemoPages,
-} from "../../components";
+} from "../assets/home";
+import { Button, DownloadButton, NavbarIcons, DemoPages } from "../components";
 export default {
   data() {
     return {

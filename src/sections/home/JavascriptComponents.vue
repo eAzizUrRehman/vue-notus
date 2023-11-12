@@ -43,7 +43,7 @@
 <script>
 import {} from "../../assets/home";
 import { ContentDetailsCard } from "../../components";
-import store from "../../store";
+ 
 export default {
   data() {
     return {};
@@ -60,7 +60,7 @@ export default {
   },
   computed: {
     javascriptComponents() {
-      return store.state.javascriptComponents;
+      return this.$store.state.javascriptComponents;
     },
   },
 };
