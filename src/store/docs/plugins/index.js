@@ -1,9 +1,3 @@
-import chartJS from "./chartJS.js";
-import googleMaps from "./googleMaps.js";
-import popperJS from "./popperJS.js";
-
-export default {
-  chartJS,
-  googleMaps,
-  popperJS,
-};
+export { default as chartJS } from "./chartJS.js";
+export { default as googleMaps } from "./googleMaps.js";
+export { default as popperJS } from "./popperJS.js";

@@ -1,15 +1,6 @@
-import overview from "./overview.js";
-import buildTools from "./buildTools.js";
-import license from "./license.js";
-import quickStart from "./quickStart.js";
-import whatIsTailwindCSS from "./whatIsTailwindCSS.js";
-import whatIsVue from "./whatIsVue.js";
-
-export default {
-  overview,
-  buildTools,
-  license,
-  quickStart,
-  whatIsTailwindCSS,
-  whatIsVue,
-};
+export { default as overview } from "./overview.js";
+export { default as buildTools } from "./buildTools.js";
+export { default as license } from "./license.js";
+export { default as quickStart } from "./quickStart.js";
+export { default as whatIsTailwindCSS } from "./whatIsTailwindCSS.js";
+export { default as whatIsVue } from "./whatIsVue.js";

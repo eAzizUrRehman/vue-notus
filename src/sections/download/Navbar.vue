@@ -2,7 +2,7 @@
   <header
     class="container-wider w-full h-16 py-5 flex justify-between items-stretch bg-tertiary-white text-sm uppercase"
   >
-  <img :src="logo" alt="">
+    <img :src="logo" alt="" />
     <router-link
       :to="{ name: 'home' }"
       class="inline-flex items-center h-full font-extrabold cursor-pointer"

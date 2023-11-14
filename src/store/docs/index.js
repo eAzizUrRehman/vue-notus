@@ -1,38 +1,36 @@
 // getting started
-import overview from "./gettingStarted/overview.js";
-import buildTools from "./gettingStarted/buildTools.js";
-import license from "./gettingStarted/license.js";
-import quickStart from "./gettingStarted/quickStart.js";
-import whatIsTailwindCSS from "./gettingStarted/whatIsTailwindCSS.js";
-import whatIsVue from "./gettingStarted/whatIsVue.js";
+import {
+  overview,
+  buildTools,
+  license,
+  quickStart,
+  whatIsTailwindCSS,
+  whatIsVue,
+} from "./gettingStarted";
 
 // foundation
-import colors from "./foundation/colors.js";
-import grid from "./foundation/grid.js";
-import icons from "./foundation/icons.js";
-import typography from "./foundation/typography.js";
-import customClasses from "./foundation/customClasses.js";
+import { colors, grid, icons, typography, customClasses } from "./foundation";
 
 // components
-import alerts from "./components/alerts.js";
-import badge from "./components/badge.js";
-import buttons from "./components/buttons.js";
-import dropdowns from "./components/dropdowns.js";
-import images from "./components/images.js";
-import inputs from "./components/inputs.js";
-import menus from "./components/menus.js";
-import modals from "./components/modals.js";
-import navbars from "./components/navbars.js";
-import pagination from "./components/pagination.js";
-import popovers from "./components/popovers.js";
-import progressbars from "./components/progressbars.js";
-import tabs from "./components/tabs.js";
-import tooltips from "./components/tooltips.js";
+import {
+  alerts,
+  badge,
+  buttons,
+  dropdowns,
+  images,
+  inputs,
+  menus,
+  modals,
+  navbars,
+  pagination,
+  popovers,
+  progressbars,
+  tabs,
+  tooltips,
+} from "./components";
 
 // plugins
-import chartJS from "./plugins/chartJS.js";
-import googleMaps from "./plugins/googleMaps.js";
-import popperJS from "./plugins/popperJS.js";
+import { chartJS, googleMaps, popperJS } from "./plugins";
 
 const sidebar = {
   id: "sidebar",

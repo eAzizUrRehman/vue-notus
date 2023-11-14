@@ -1,5 +1,1 @@
-import logo from './logo.png'
-
-export default{
-    logo
-}
+export { default as logo } from "./logo.png";

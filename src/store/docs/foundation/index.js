@@ -1,13 +1,5 @@
-import colors from "./colors.js";
-import grid from "./grid.js";
-import icons from "./icons.js";
-import typography from "./typography.js";
-import customClasses from "./customClasses.js";
-
-export default {
-  colors,
-  grid,
-  icons,
-  typography,
-  customClasses,
-};
+export { default as colors } from "./colors.js";
+export { default as grid } from "./grid.js";
+export { default as icons } from "./icons.js";
+export { default as typography } from "./typography.js";
+export { default as customClasses } from "./customClasses.js";

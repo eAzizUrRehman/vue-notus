@@ -11,11 +11,6 @@ import {
   footer,
 } from "./home";
 
-import {
-  
-} from "./home";
-
-
 import sidebar from "./docs";
 
 export default {

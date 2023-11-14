@@ -1,11 +1,11 @@
 <template>
   <div class="docs-content-padding text-center-text mb-10">
-    <img :src="overview.overview.image" alt="" />
+    <img :src="overview.image" alt="" />
     <p class="mt-4 font-thin tracking-wide text-md">
-      {{ overview.overview.imageDescription }}
+      {{ overview.imageDescription }}
     </p>
     <div class="grid grid-cols-3 gap-8">
-      <div v-for="card in overview.overview.cards" :key="card.id">
+      <div v-for="card in overview.cards" :key="card.id">
         <OverviewCard
           :title="card.title"
           :description="card.description"
@@ -16,14 +16,14 @@
     </div>
     <div class="mt-20">
       <h3 class="mt-4 mb-2 text-xl font-bold tracking-wide">
-        {{ overview.overview.resourcesAndCredits.title }}
+        {{ overview.resourcesAndCredits.title }}
       </h3>
       <p class="dim text-base font-thin tracking-wide leading-relaxed">
-        {{ overview.overview.resourcesAndCredits.description }}
+        {{ overview.resourcesAndCredits.description }}
       </p>
       <div class="mt-6 tracking-wide leading-relaxed">
         <div
-          v-for="resource in overview.overview.resourcesAndCredits.resources"
+          v-for="resource in overview.resourcesAndCredits.resources"
           :key="resource.id"
         >
           <p class="dim mt-1">
@@ -37,13 +37,13 @@
     </div>
     <div class="mt-20">
       <h3 class="mt-4 mb-2 text-xl font-bold tracking-wide">
-        {{ overview.overview.learnMore.title }}
+        {{ overview.learnMore.title }}
       </h3>
       <p class="dim text-base font-thin tracking-wide leading-relaxed">
-        {{ overview.overview.learnMore.description }}
+        {{ overview.learnMore.description }}
       </p>
       <div class="mt-6 tracking-wide leading-relaxed">
-        <div v-for="link in overview.overview.learnMore.links" :key="link.id">
+        <div v-for="link in overview.learnMore.links" :key="link.id">
           <p class="dim mt-1">
             Follow
             <a :href="link.link" target="_blank" class="text-center-link">
@@ -65,7 +65,7 @@
   </div>
 </template>
 <script>
-import overview from "../../../store/docs/gettingStarted";
+import { overview } from "../../../store/docs/gettingStarted";
 import {
   Button,
   CentralContentHeader,

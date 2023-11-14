@@ -1,15 +1,15 @@
 <template>
   <div class="">
-    <!-- <Navbar /> -->
+    <Navbar />
     <main></main>
   </div>
 </template>
 
 <script>
-// import { Navbar } from "../sections/download";
+import { Navbar } from "../sections/download";
 export default {
   components: {
-    // Navbar,
+    Navbar,
   },
 };
 </script>

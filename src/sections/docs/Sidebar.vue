@@ -26,7 +26,7 @@
 
 <script>
 import { vueLogo } from "../../assets/docs";
-import overview from "../../store/docs/gettingStarted/overview";
+import { overview } from "../../store/docs/gettingStarted";
 export default {
   data() {
     return { overview, vueLogo };

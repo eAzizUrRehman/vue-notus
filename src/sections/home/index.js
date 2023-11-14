@@ -1,21 +1,9 @@
-import Hero from "./Hero.vue";
-import Content from "./Content.vue";
-import CSSComponents from "./CSSComponents.vue";
-import JavascriptComponents from "./JavascriptComponents.vue";
-import ComplexDocumentation from "./ComplexDocumentation.vue";
-import BeautifulExamplePages from "./BeautifulExamplePages.vue";
-import OpenSource from "./OpenSource.vue";
-import StarterKit from "./StarterKit.vue";
-import Footer from "./Footer.vue";
-
-export {
-  Hero,
-  Content,
-  CSSComponents,
-  JavascriptComponents,
-  ComplexDocumentation,
-  BeautifulExamplePages,
-  OpenSource,
-  StarterKit,
-  Footer,
-};
+export { default as Hero } from "./Hero.vue";
+export { default as Content } from "./Content.vue";
+export { default as CSSComponents } from "./CSSComponents.vue";
+export { default as JavascriptComponents } from "./JavascriptComponents.vue";
+export { default as ComplexDocumentation } from "./ComplexDocumentation.vue";
+export { default as BeautifulExamplePages } from "./BeautifulExamplePages.vue";
+export { default as OpenSource } from "./OpenSource.vue";
+export { default as StarterKit } from "./StarterKit.vue";
+export { default as Footer } from "./Footer.vue";

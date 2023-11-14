@@ -1,32 +1,14 @@
-import alerts from "./alerts.js";
-import badge from "./badge.js";
-import buttons from "./buttons.js";
-import dropdowns from "./dropdowns.js";
-import images from "./images.js";
-import inputs from "./inputs.js";
-import menus from "./menus.js";
-import modals from "./modals.js";
-import navbars from "./navbars.js";
-import pagination from "./pagination.js";
-import popovers from "./popovers.js";
-import progressbars from "./progressbars.js";
-import tabs from "./tabs.js";
-import tooltips from "./tooltips.js";
-
-
-export default {
-  alerts,
-  badge,
-  buttons,  
-  dropdowns,
-  images,
-  inputs,
-  menus,
-  modals,
-  navbars,
-  pagination,
-  popovers,
-  progressbars,
-  tabs,
-  tooltips
-};
+export { default as alerts } from "./alerts.js";
+export { default as badge } from "./badge.js";
+export { default as buttons } from "./buttons.js";
+export { default as dropdowns } from "./dropdowns.js";
+export { default as images } from "./images.js";
+export { default as inputs } from "./inputs.js";
+export { default as menus } from "./menus.js";
+export { default as modals } from "./modals.js";
+export { default as navbars } from "./navbars.js";
+export { default as pagination } from "./pagination.js";
+export { default as popovers } from "./popovers.js";
+export { default as progressbars } from "./progressbars.js";
+export { default as tabs } from "./tabs.js";
+export { default as tooltips } from "./tooltips.js";
