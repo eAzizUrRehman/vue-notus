@@ -65,7 +65,7 @@
   </div>
 </template>
 <script>
-import overview from "../../../store/stateForDocs/gettingStarted";
+import overview from "../../../store/docs/gettingStarted";
 import {
   Button,
   CentralContentHeader,
@@ -77,6 +77,10 @@ export default {
       overview,
     };
   },
-  components: { CentralContentHeader, OverviewCard, Button },
+  components: {
+    CentralContentHeader,
+    OverviewCard,
+    Button,
+  },
 };
 </script>

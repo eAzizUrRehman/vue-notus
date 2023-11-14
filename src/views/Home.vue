@@ -1,8 +1,6 @@
 <template>
-  <div class="w-full overflow-hidden">
-    
+  <main class="w-full overflow-hidden">
       <Hero />
-
     <div>
       <svg
         class="overflow-hidden"
@@ -49,7 +47,7 @@
     <div class="w-full pt-96 bg-footer-green">
       <Footer />
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

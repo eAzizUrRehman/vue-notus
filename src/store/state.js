@@ -9,8 +9,14 @@ import {
   openSource,
   starterKit,
   footer,
-} from "./stateForHome";
-import sidebar from "./stateForDocs";
+} from "./home";
+
+import {
+  
+} from "./home";
+
+
+import sidebar from "./docs";
 
 export default {
   // Home

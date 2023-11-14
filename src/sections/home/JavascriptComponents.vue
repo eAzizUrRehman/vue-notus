@@ -16,7 +16,7 @@
         >
           <div
             class="w-full lg:py-8 py-6 flex flex-col justify-center items-center rounded-lg bg-black"
-            :class="bgColor(card)"
+            :style="{ backgroundColor: '#' + card.bgColor }"
           >
             <img
               :src="card.iconUrl"
@@ -33,7 +33,7 @@
       </div>
     </div>
     <div
-      class="sm:w-1/2 w-fit sm:mx-0 mx-auto lg:pl-40 md:pl-20 sm:pl-10 pl-0 lg:pb-10 pb-0 my-auto sm:mb-auto mb-32 sm:scale-100 scale-110 "
+      class="sm:w-1/2 w-fit sm:mx-0 mx-auto lg:pl-40 md:pl-20 sm:pl-10 pl-0 lg:pb-10 pb-0 my-auto sm:mb-auto mb-32 sm:scale-100 scale-110"
     >
       <ContentDetailsCard :component="javascriptComponents" />
     </div>
@@ -43,7 +43,7 @@
 <script>
 import {} from "../../assets/home";
 import { ContentDetailsCard } from "../../components";
- 
+
 export default {
   data() {
     return {};

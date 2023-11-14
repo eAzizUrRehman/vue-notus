@@ -1,6 +1,11 @@
 <template>
   <div class="my-10 text-center-text">
-    <div class="w-14 h-14 flex-center bg-black rounded-full">
+    <div
+      class="w-12 h-12 flex-center bg-black rounded-full"
+      :style="{
+        backgroundColor: '#' + iconColor,
+      }"
+    >
       <img :src="iconUrl" alt="" width="20" height="20" />
     </div>
     <h3

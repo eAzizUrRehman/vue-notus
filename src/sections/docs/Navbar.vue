@@ -1,17 +1,19 @@
 <template>
-  <header class="docs-container text-white py-4 flex justify-between items-center">
+  <header
+    class="docs-container text-white py-4 flex justify-between items-center"
+  >
     <div class="flex justify-between items-center gap-8 w-fit">
       <div class="flex justify-between gap-3 w-fit">
         <router-link
           :to="{ name: 'home' }"
-          class="dim   font-medium text-sm uppercase cursor-pointer"
+          class="dim font-medium text-sm uppercase cursor-pointer"
         >
-          Creative Tim
+          Vue Notus
         </router-link>
         <div class="dim pr-[2px] my-0.5 bg-white"></div>
         <router-link
           :to="{ name: 'docs' }"
-          class="dim   font-medium text-sm uppercase cursor-pointer"
+          class="dim font-medium text-sm uppercase cursor-pointer"
         >
           Docs
         </router-link>
@@ -22,12 +24,12 @@
       >
         Live Preview
       </router-link>
-      <router-link
-        :to="{ name: 'support' }"
-        class="dim text-sm cursor-pointer"
-      >
+      <router-link :to="{ name: 'support' }" class="dim text-sm cursor-pointer">
         Support
       </router-link>
+    </div>
+    <div class="hidden sm:block">
+      <Credit color="ffffff" />
     </div>
     <router-link :to="{ name: 'download' }" class="dim text-sm cursor-pointer">
       Download Free
@@ -36,5 +38,10 @@
 </template>
 
 <script>
-export default {};
+import { Credit } from "../../components";
+export default {
+  components: {
+    Credit,
+  },
+};
 </script>

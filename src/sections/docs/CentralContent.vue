@@ -39,17 +39,17 @@
         class="mt-3 w-full dim text-center-text text-xs px-[52px] mr-12 flex justify-between"
       >
         <p class="font-thin">
-          © 2023
+          Copyright © Nov 2023
           <router-link
             :to="{ name: 'home' }"
             class="font-bold text-sm text-center-link cursor-pointer"
           >
-            Creative Tim
+            Vue Notus by Aziz - Creative Pulse
           </router-link>
         </p>
         <ul class="flex gap-4">
           <li>
-            <router-link :to="{ name: 'home' }"> Creative Tim </router-link>
+            <router-link :to="{ name: 'home' }"> Vue Notus </router-link>
           </li>
           <li>
             <router-link to="/docs/contact-us"> Contact Us </router-link>

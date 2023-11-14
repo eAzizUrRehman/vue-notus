@@ -1,5 +1,5 @@
 <template>
-  <div class="container-wider pl-5 pr-10 dim flex flex-col">
+  <footer class="container-wider pl-5 pr-10 dim flex flex-col">
     <div
       class="mb-16 flex lg:flex-row flex-col lg:mx-0 mx-auto justify-between lg:scale-100 md:scale-125 sm:scale-110 scale-100"
     >
@@ -49,7 +49,7 @@
     <p class="my-6 mx-auto text-xs font-semibold tracking-wider">
       {{ footer.copyright }}
     </p>
-  </div>
+  </footer>
 </template>
 
 <script>

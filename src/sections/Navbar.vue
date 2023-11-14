@@ -3,28 +3,12 @@
     class="container-wider w-full h-16 py-5 flex justify-between items-stretch bg-tertiary-white text-sm uppercase"
   >
     <div class="flex gap-4">
-      <router-link
-        :to="{ name: 'home' }"
-        class="inline-flex items-center h-full font-extrabold cursor-pointer"
-      >
-        Vue Notus
-      </router-link>
-      <div class="cursor-pointer">
-        <router-link
-          to="/docs"
-          class="dim inline-flex items-center h-full text-xs font-bold transition-colors hover:text-hover-gray duration-100 ease-in-out transform"
-        >
-          <img
-            :src="fileIcon"
-            alt=""
-            width="12"
-            class="mr-2 cursor-pointer hover:scale-125 transform transition-transform duration-100 ease-in-out"
-          />
-          Docs
-        </router-link>
-      </div>
+      <VueNotus />
+      <Docs />
     </div>
-
+    <div class="hidden sm:block">
+      <Credit color="334155" />
+    </div>
     <div class="hidden md:flex-center gap-5">
       <NavbarIcons />
       <DownloadButton />
@@ -35,25 +19,38 @@
     >
       <img :src="hamburgerIcon" alt="" class="w-6" />
     </div>
-
     <div
-      class="modal-overlay block md:hidden"
+      class="fixed top-0 right-0 w-full h-full bg-[#00000080] flex justify-end items-end backdrop-blur-sm md:hidden"
       @click.self="closeSidebar"
       v-if="showSidebar"
     >
       <div
         class="sm:w-72 w-60 h-[100vh] m-0 bg-background-gray text-tertiary-white tracking-widest"
       >
-        <img
-          :src="closeIcon"
-          alt=""
-          class="w-8 mt-4 ml-4"
-          @click="closeSidebar"
-        />
+        <div class="w-full flex justify-end">
+          <img
+            :src="closeIcon"
+            alt=""
+            class="w-8 mt-4 mr-4"
+            @click="closeSidebar"
+          />
+        </div>
         <div class="pt-10 sm:px-16 px-12 flex flex-col justify-start gap-6">
-          <DemoPages />
-          <NavbarIcons />
-          <DownloadButton />
+          <div @click="showSidebar = false">
+            <VueNotus />
+          </div>
+          <div @click="showSidebar = false">
+            <Docs />
+          </div>
+          <div @click="showSidebar = false">
+            <DemoPages />
+          </div>
+          <div @click="showSidebar = false">
+            <NavbarIcons />
+          </div>
+          <div @click="showSidebar = false">
+            <DownloadButton />
+          </div>
         </div>
       </div>
     </div>
@@ -62,18 +59,24 @@
 <script>
 import {
   facebookIcon,
-  fileIcon,
   githubIcon,
   twitterIcon,
   hamburgerIcon,
   closeIcon,
 } from "../assets/home";
-import { Button, DownloadButton, NavbarIcons, DemoPages } from "../components";
+import {
+  Button,
+  VueNotus,
+  Docs,
+  DemoPages,
+  NavbarIcons,
+  DownloadButton,
+  Credit,
+} from "../components";
 export default {
   data() {
     return {
       facebookIcon,
-      fileIcon,
       githubIcon,
       twitterIcon,
       hamburgerIcon,
@@ -83,9 +86,12 @@ export default {
   },
   components: {
     Button,
-    DownloadButton,
-    NavbarIcons,
+    VueNotus,
+    Docs,
     DemoPages,
+    NavbarIcons,
+    DownloadButton,
+    Credit,
   },
   methods: {
     openSidebar() {
@@ -99,17 +105,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  backdrop-filter: blur(5px);
-}
-</style>

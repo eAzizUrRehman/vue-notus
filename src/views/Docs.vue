@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <main class="">
     <div class="w-full sticky top-0 z-50 bg-navbar-gray">
       <Navbar />
     </div>
@@ -10,11 +10,10 @@
         </div>
         <div class="w-full ">
           <CentralContent />
-          <!-- <router-view /> -->
         </div>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
