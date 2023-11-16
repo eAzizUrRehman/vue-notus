@@ -108,7 +108,7 @@ export default {
   mounted() {
     this.currentRoutePath = this.$route.path;
 
-    this.$router.afterEach((to, from) => {
+    this.$router.afterEach((to) => {
       this.currentRoutePath = to.path;
     });
   },

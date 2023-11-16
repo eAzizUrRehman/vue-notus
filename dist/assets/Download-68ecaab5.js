@@ -1,1 +1,0 @@
-import{_ as o,c as e,o as s,a as t}from"./index-04ac4d33.js";const n={components:{}},c={class:""},a=t("main",null,null,-1),_=[a];function r(d,l,i,p,f,m){return s(),e("div",c,_)}const h=o(n,[["render",r]]);export{h as default};

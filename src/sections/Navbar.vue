@@ -1,6 +1,6 @@
 <template>
   <header
-    class="container-wider w-full h-16 py-5 flex justify-between items-stretch bg-tertiary-white text-sm uppercase"
+    class="container-wider w-full h-16 py-5 flex justify-between items-stretch text-sm uppercase"
   >
     <div class="flex gap-4">
       <VueNotus />
@@ -11,7 +11,7 @@
     </div>
     <div class="hidden md:flex-center gap-5">
       <NavbarIcons />
-      <DownloadButton />
+      <HomeButton />
     </div>
     <div
       class="dim my-auto block md:hidden cursor-pointer"
@@ -49,7 +49,7 @@
             <NavbarIcons />
           </div>
           <div @click="showSidebar = false">
-            <DownloadButton />
+            <HomeButton />
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@ import {
   Docs,
   DemoPages,
   NavbarIcons,
-  DownloadButton,
+  HomeButton,
   Credit,
 } from "../components";
 export default {
@@ -90,7 +90,7 @@ export default {
     Docs,
     DemoPages,
     NavbarIcons,
-    DownloadButton,
+    HomeButton,
     Credit,
   },
   methods: {

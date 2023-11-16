@@ -1,40 +1,49 @@
 <template>
   <header
-    class="container-wider w-full h-16 py-5 flex justify-between items-stretch bg-tertiary-white text-sm uppercase"
+    class="download-container-wider w-full h-16 py-9 pl-28 pr-4 flex items-center justify-between text-sm"
   >
-    <img :src="logo" alt="" />
-    <router-link
-      :to="{ name: 'home' }"
-      class="inline-flex items-center h-full font-extrabold cursor-pointer"
-    >
-      Vue Notus
-    </router-link>
-    <router-link
-      :to="{ name: 'home' }"
-      class="inline-flex items-center h-full font-extrabold cursor-pointer"
-    >
-      Vue Notus
-    </router-link>
+    <div class="flex-center gap-2">
+      <img :src="logo" alt="" class="logo-black w-9" />
+      <router-link
+        :to="{ name: 'home' }"
+        class="font-semibold text-base cursor-pointer"
+      >
+        Vue Notus
+      </router-link>
+    </div>
 
-    <router-link
-      :to="{ name: 'home' }"
-      class="inline-flex items-center h-full font-extrabold cursor-pointer"
-    >
-      Vue Notus
-    </router-link>
-    <Button />
+    <div class="custom-development flex items-center gap-9">
+      <router-link
+        to="/"
+        class="font-semibold text-xs text-download-nav-blue tracking-wide uppercase cursor-pointer"
+      >
+        Custom Development
+      </router-link>
+      <router-link
+        :to="{ name: 'live-preview' }"
+        class="font-semibold text-xs text-download-nav-blue tracking-wide uppercase cursor-pointer"
+      >
+        Preview
+      </router-link>
+      <router-link
+        :to="{ name: 'docs' }"
+        class="font-semibold text-xs text-download-nav-blue tracking-wide uppercase cursor-pointer"
+      >
+        Docs
+      </router-link>
+      <DownloadButton text="Download" bgColor="00BBFF" />
+    </div>
   </header>
 </template>
 <script>
-import logo from "../../assets/download/logo.png";
-// import { logo } from "../../assets/download";
-import { Button } from "../../components";
+import { logo } from "../../assets/download";
+import { DownloadButton } from "../../components";
 export default {
   data() {
     return { logo };
   },
   components: {
-    Button,
+    DownloadButton,
   },
 };
 </script>

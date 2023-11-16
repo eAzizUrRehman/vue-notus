@@ -1,4 +1,3 @@
-// Default pattern for exporting images
 export { default as heroImg } from "./hero-img.png";
 export { default as laptop } from "./laptop.jpg";
 

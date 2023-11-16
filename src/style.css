@@ -21,6 +21,12 @@
 }
 
 @layer components {
+  .logo-white {
+    filter: grayscale(100%) brightness(200%);
+  }
+  .logo-black {
+    filter: grayscale(100%);
+  }
   .container-wider {
     margin: 0 auto;
     padding: 0 30px;
@@ -45,8 +51,14 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
-  
+  .download-container-wider {
+    margin: 0 auto;
+    max-width: 1155px;
+  }
+  .download-container-tighter {
+    margin: 0 auto;
+    max-width: 780px;
+  }
 
   .flex-center {
     display: flex;

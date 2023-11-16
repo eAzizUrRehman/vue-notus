@@ -8,8 +8,12 @@ export { default as VueNotus } from "./home/VueNotus.vue";
 export { default as Docs } from "./home/Docs.vue";
 export { default as DemoPages } from "./home/DemoPages.vue";
 export { default as NavbarIcons } from "./home/NavbarIcons.vue";
-export { default as DownloadButton } from "./home/DownloadButton.vue";
+export { default as HomeButton } from "./home/HomeButton.vue";
 
 // docs
 export { default as CentralContentHeader } from "./docs/CentralContentHeader.vue";
 export { default as OverviewCard } from "./docs/overview/OverviewCard.vue";
+
+// download
+export { default as DownloadButton } from "./download/DownloadButton.vue";
+export { default as DownloadFooterIcon } from "./download/DownloadFooterIcon.vue";

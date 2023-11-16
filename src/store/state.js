@@ -13,8 +13,14 @@ import {
 
 import sidebar from "./docs";
 
+import {
+  quickLinks,
+  hero as downloadHero,
+  footer as downloadFooter,
+} from "./download";
+
 export default {
-  // Home
+  // home
   hero,
   contentBanner,
   contentCards,
@@ -26,6 +32,11 @@ export default {
   starterKit,
   footer,
 
-  //docs
+  // docs
   sidebar,
+
+  // download
+  quickLinks,
+  downloadHero,
+  downloadFooter,
 };

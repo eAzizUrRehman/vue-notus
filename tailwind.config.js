@@ -25,6 +25,13 @@ export default {
         "center-title-border": "#5E72E4",
         "center-text": "#3B454E",
         "center-link": "#5e72e4",
+
+        // download
+        "download-nav-blue": "#00BBFF",
+        "text-color": "#666666",
+        "footer-bg-color": "#36275D",
+        "footer-text-color": "#C3BFCF",
+        "download-dim-black": "#464646",
       },
       aspectRatio: {
         "13/10": "13 / 10",

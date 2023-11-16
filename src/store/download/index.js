@@ -1,22 +1,42 @@
-// import {} from "../../assets/home";
-// import links from "./quickLinks";
+import links from "./quickLinks";
+import footerContent from "./footer.js";
 
-// import description from "./productDescription.js";
-// import help from "./help.js";
-// import footer from "./footer.js";
+import { heroImg, starIcon, licenceIcon } from "../../assets/download";
 
-// import technologies from "./technologies.js";
-// import designSystems from "./designSystems.js";
-// import bundles from "./bundles.js";
-// import bootstrap from "./bootstrap.js";
-// import resources from "./resources.js";
+export const quickLinks = {
+  id: "quickLinks",
+  title: "Creative Pulse",
+  links: links,
+};
+export const hero = {
+  id: "hero",
+  title: "Vue Notus",
+  tagline: "The free Tailwind CSS UI kit and admin.",
+  icon1: starIcon,
+  rating: "4.90/5",
+  reviews: "17",
+  licence: "MIT License",
+  icon2: licenceIcon,
+  image: heroImg,
 
-// export const productDescription = {
-//   title: "Creative Pulse",
-//   links: links,
-// };
+  button1Text: "Free Download",
+  button1BgColor: "ffffff",
+  button1Color: "666666",
 
-// export const quickLinks = {
-//   title: "Creative Pulse",
-//   links: [],
-// };
+  button2Text: "Live Preview",
+  button2BgColor: null,
+  button2Color: null,
+  button2BorderColor: "ffffff",
+
+  button3Text: "Docs",
+  button3BgColor: "ffffff",
+  button3Color: "666666",
+};
+
+export const productDescription = {
+  id: "productDescription",
+  topline: "Free tailwind css and vuejs ui kit and admin",
+  title: "Product description",
+};
+
+export const footer = footerContent;
