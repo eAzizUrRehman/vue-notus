@@ -6,7 +6,8 @@
         backgroundColor: '#' + iconColor,
       }"
     >
-      <img :src="iconUrl" alt="" width="20" height="20" />
+      <img
+    loading="lazy" :src="iconUrl" alt="" width="20" height="20" />
     </div>
     <h3
       class="mt-4 mb-2 text-md font-bold tracking-wide hover:text-center-link cursor-pointer"

@@ -1,6 +1,7 @@
 <template>
-  <div class="docs-content-padding text-center-text mb-10">
-    <img :src="overview.image" alt="" />
+  <section class="docs-content-padding text-center-text mb-10">
+    <img
+    loading="lazy" :src="overview.image" alt="" />
     <p class="mt-4 font-thin tracking-wide text-md">
       {{ overview.imageDescription }}
     </p>
@@ -62,7 +63,7 @@
         Quick start here
       </router-link>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import { overview } from "../../../store/docs/gettingStarted";

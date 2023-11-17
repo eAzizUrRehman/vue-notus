@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     class="container-tighter h-full flex sm:flex-row flex-col-reverse items-end"
   >
     <div
@@ -19,6 +19,7 @@
             :style="{ backgroundColor: '#' + card.bgColor }"
           >
             <img
+              loading="lazy"
               :src="card.iconUrl"
               alt=""
               class="lg:w-16 w-12 lg:h-16 h-12 rounded-full"
@@ -37,17 +38,14 @@
     >
       <ContentDetailsCard :component="javascriptComponents" />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
-import {} from "../../assets/home";
+import { mapState } from "vuex";
 import { ContentDetailsCard } from "../../components";
 
 export default {
-  data() {
-    return {};
-  },
   components: {
     ContentDetailsCard,
   },
@@ -59,9 +57,9 @@ export default {
     },
   },
   computed: {
-    javascriptComponents() {
-      return this.$store.state.javascriptComponents;
-    },
+    ...mapState({
+      javascriptComponents: (state) => state.javascriptComponents,
+    }),
   },
 };
 </script>

@@ -59,7 +59,6 @@
     margin: 0 auto;
     max-width: 780px;
   }
-
   .flex-center {
     display: flex;
     justify-content: center;
@@ -71,5 +70,11 @@
     background-size: 60%;
     background-position-x: 150%;
     background-position-y: 70%;
+  }
+  .comment-background-img {
+    background: url("./assets/download/help/bg-comment-icon.svg") no-repeat
+      right bottom/cover;
+    background-size: 25%;
+    background-position: center;
   }
 }

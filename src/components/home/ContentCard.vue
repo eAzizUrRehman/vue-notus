@@ -2,7 +2,8 @@
   <div
     class="ml-1 h-12 w-12 rounded-full bg-tertiary-white shadow-xl flex-center"
   >
-    <img :src="contentCard.iconUrl" alt="" class="w-4" />
+    <img
+    loading="lazy" :src="contentCard.iconUrl" alt="" class="w-4" />
   </div>
   <h4 class="text-lg font-bold mt-4 mb-1">
     {{ contentCard.title }}
@@ -14,9 +15,7 @@
 
 <script>
 export default {
-  data() {
-    return {};
-  },
+ 
   props: {
     contentCard: Object,
   },

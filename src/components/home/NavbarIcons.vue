@@ -6,6 +6,7 @@
         target="_blank"
       >
         <img
+    loading="lazy"
           :src="facebookIcon"
           alt=""
           width="19"
@@ -19,6 +20,7 @@
         target="_blank"
       >
         <img
+    loading="lazy"
           :src="twitterIcon"
           alt=""
           width="19"
@@ -32,6 +34,7 @@
         target="_blank"
       >
         <img
+    loading="lazy"
           :src="githubIcon"
           alt=""
           width="19"

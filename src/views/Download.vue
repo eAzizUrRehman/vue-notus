@@ -20,8 +20,9 @@
           <!-- <ProductDescription /> -->
         </div>
       </div>
-      <div class="bg-download-dim-black h-screen">
+      <div class="bg-download-dim-black comment-background-img pb-20">
         <Help />
+        <SharingIsCaring />
       </div>
     </main>
     <div class="bg-footer-bg-color text-white">
@@ -36,6 +37,7 @@ import {
   QuickLinks,
   Hero,
   ProductDescription,
+  SharingIsCaring,
   Help,
   Footer,
 } from "../sections/download";
@@ -60,12 +62,12 @@ export default {
       console.log(this.showNavbar);
     },
   },
-
   components: {
     Navbar,
     QuickLinks,
     Hero,
     ProductDescription,
+    SharingIsCaring,
     Help,
     Footer,
   },
@@ -81,7 +83,6 @@ export default {
 .fade-leave-to {
   transform: translateY(-100%);
 }
-
 .download-hero-gradient-color {
   background: linear-gradient(-45deg, #209077 0%, #1ae28a 100%);
 }

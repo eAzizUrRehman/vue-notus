@@ -16,6 +16,8 @@ import sidebar from "./docs";
 import {
   quickLinks,
   hero as downloadHero,
+  sharingIsCaring,
+  help,
   footer as downloadFooter,
 } from "./download";
 
@@ -38,5 +40,7 @@ export default {
   // download
   quickLinks,
   downloadHero,
+  sharingIsCaring,
+  help,
   downloadFooter,
 };

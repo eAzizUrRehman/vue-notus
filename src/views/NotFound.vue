@@ -1,6 +1,7 @@
 <template>
   <div class="w-full h-[90dvh] max-h-screen flex-center">
     <img
+    loading="lazy"
       :src="Img404"
       alt=""
       class="w-full max-w-sm rounded-xl shadow-2xl border-2 border-[#334155] scale-125"

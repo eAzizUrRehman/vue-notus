@@ -5,6 +5,7 @@
       class="dim inline-flex items-center h-full text-xs font-bold transition-colors hover:text-hover-gray duration-100 ease-in-out transform"
     >
       <img
+    loading="lazy"
         :src="fileIcon"
         alt=""
         width="12"

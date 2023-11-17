@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full flex flex-col">
+  <section class="w-full h-full flex flex-col">
     <div
       class="flex flex-1 w-full h-full gap-8 max-h-[84.62vh] overflow-y-auto"
     >
@@ -60,7 +60,7 @@
         </ul>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -107,7 +107,6 @@ export default {
   },
   mounted() {
     this.currentRoutePath = this.$route.path;
-
     this.$router.afterEach((to) => {
       this.currentRoutePath = to.path;
     });

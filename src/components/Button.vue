@@ -9,6 +9,7 @@
       }"
     >
       <img
+        loading="lazy"
         v-if="icon"
         :src="icon"
         alt=""
@@ -23,9 +24,7 @@
 
 <script>
 export default {
-  data() {
-    return {};
-  },
+ 
   props: {
     href: String,
     text: String,

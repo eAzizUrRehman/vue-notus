@@ -19,9 +19,7 @@
 <script>
 import { Navbar, Sidebar, CentralContent } from "../sections/docs";
 export default {
-  data() {
-    return {};
-  },
+ 
   components: {
     Navbar,
     Sidebar,

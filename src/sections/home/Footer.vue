@@ -20,7 +20,7 @@
               <div
                 class="w-10 h-10 rounded-full shadow-lg flex-center bg-tertiary-white"
               >
-                <img :src="icon.icon" alt="" class="w-4" />
+                <img loading="lazy" :src="icon.icon" alt="" class="w-4" />
               </div>
             </a>
           </div>
@@ -53,15 +53,13 @@
 </template>
 
 <script>
- 
+import { mapState } from "vuex";
+
 export default {
-  data() {
-    return {};
-  },
   computed: {
-    footer() {
-      return this.$store.state.footer;
-    },
+    ...mapState({
+      footer: (state) => state.footer,
+    }),
   },
 };
 </script>

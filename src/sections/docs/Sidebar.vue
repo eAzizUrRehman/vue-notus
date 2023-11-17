@@ -2,7 +2,7 @@
   {{ sidebar.subtopics }}
   <div class="pt-6 text-sidebar-text">
     <div class="flex justify-start items-center gap-2">
-      <img :src="vueLogo" alt="" width="25" />
+      <img loading="lazy" :src="vueLogo" alt="" width="25" />
       <h1 class="font-extrabold text-lg">Vue Notus</h1>
     </div>
     <div class="max-h-[83dvh] overflow-y-auto">
@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import { vueLogo } from "../../assets/docs";
 import { overview } from "../../store/docs/gettingStarted";
 export default {
@@ -32,9 +33,9 @@ export default {
     return { overview, vueLogo };
   },
   computed: {
-    sidebar() {
-      return this.$store.state.sidebar;
-    },
+    ...mapState({
+      sidebar: (state) => state.sidebar,
+    }),
   },
 };
 </script>

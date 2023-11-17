@@ -1,23 +1,21 @@
 <template>
-  <div
+  <section
     class="container-tighter text-tertiary-white lg:scale-125 md:scale-110 scale-100"
   >
     <ContentDetailsCard :component="openSource" />
-  </div>
+  </section>
 </template>
 
 <script>
+import { mapState } from "vuex";
 import { ContentDetailsCard } from "../../components";
- 
+
 export default {
-  data() {
-    return {};
-  },
   components: { ContentDetailsCard },
   computed: {
-    openSource() {
-      return this.$store.state.openSource;
-    },
+    ...mapState({
+      openSource: (state) => state.openSource,
+    }),
   },
 };
 </script>

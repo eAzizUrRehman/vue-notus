@@ -17,7 +17,8 @@
       class="dim my-auto block md:hidden cursor-pointer"
       @click="openSidebar"
     >
-      <img :src="hamburgerIcon" alt="" class="w-6" />
+      <img
+    loading="lazy" :src="hamburgerIcon" alt="" class="w-6" />
     </div>
     <div
       class="fixed top-0 right-0 w-full h-full bg-[#00000080] flex justify-end items-end backdrop-blur-sm md:hidden"
@@ -29,6 +30,7 @@
       >
         <div class="w-full flex justify-end">
           <img
+    loading="lazy"
             :src="closeIcon"
             alt=""
             class="w-8 mt-4 mr-4"

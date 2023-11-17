@@ -3,7 +3,7 @@
     class="download-container-wider w-full h-16 py-9 pl-28 pr-4 flex items-center justify-between text-sm"
   >
     <div class="flex-center gap-2">
-      <img :src="logo" alt="" class="logo-black w-9" />
+      <img loading="lazy" :src="logo" alt="" class="logo-black w-9" />
       <router-link
         :to="{ name: 'home' }"
         class="font-semibold text-base cursor-pointer"

@@ -47,6 +47,18 @@ export { default as aspnetIcon } from "./quick-links/technologies/back-end/aspne
 // quick-links/bundles
 export { default as bigBundleIcon } from "./quick-links/big-bundle-icon.webp";
 
+// help
+export { default as bgCommentIcon } from "./help/bg-comment-icon.svg";
+export { default as helpGithubIcon } from "./help/help-github-icon.svg";
+export { default as helpDocsIcon } from "./help/help-docs-icon.svg";
+export { default as helpKnowledgeCenterIcon } from "./help/help-knowledge-center-icon.svg";
+export { default as helpCustomDevelopmentIcon } from "./help/help-custom-development-icon.svg";
+export { default as helpDiscordIcon } from "./help/help-discord-icon.svg";
+
+export { default as sharingIsCaringFacebookIcon } from "./help/sharing-is-caring-facebook-icon.svg";
+export { default as sharingIsCaringTwitterIcon } from "./help/sharing-is-caring-twitter-icon.svg";
+export { default as sharingIsCaringEmailIcon } from "./help/sharing-is-caring-email-icon.svg";
+
 // footer
 export { default as paperPlaneIcon } from "./footer/paper-plane-icon.svg";
 export { default as footerGithubIcon } from "./footer/footer-github-icon.svg";

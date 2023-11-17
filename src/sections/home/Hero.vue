@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     class="container-wider max-w-1/2 h-screen max-h-[860px] bg-white flex justify-between items-center lg:scale-100 sm:scale-110 scale-100"
   >
     <div
@@ -29,18 +29,19 @@
     </div>
     <div class="w-full hidden lg:block">
       <img
+        loading="lazy"
         :src="heroImg"
         alt=""
         class="object-cover translate-x-24 scale-110"
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
+import { mapState } from "vuex";
 import { Button } from "../../components";
 import { heroImg } from "../../assets/home";
- 
 
 export default {
   data() {
@@ -52,9 +53,9 @@ export default {
     Button,
   },
   computed: {
-    hero() {
-      return this.$store.state.hero;
-    },
+    ...mapState({
+      hero: (state) => state.hero,
+    }),
   },
 };
 </script>

@@ -14,9 +14,7 @@
 import Navbar from "./sections/Navbar.vue";
 
 export default {
-  data() {
-    return {};
-  },
+ 
   components: {
     Navbar,
   },

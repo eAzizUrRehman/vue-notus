@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <div class="container-wider dim flex flex-col items-center">
       <h3 class="font-bold text-3xl text-center">
         {{ beautifulExamplePages.title }}
@@ -25,26 +25,25 @@
           {{ page.title }}
         </h4>
         <img
+          loading="lazy"
           :src="page.imgUrl"
           alt=""
           class="rounded-xl hover:-translate-y-4 transform transition-transform duration-300 ease-in-out"
         />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
+import { mapState } from "vuex";
 import { ContentDetailsCard } from "../../components";
 export default {
-  data() {
-    return {};
-  },
   components: { ContentDetailsCard },
   computed: {
-    beautifulExamplePages() {
-      return this.$store.state.beautifulExamplePages;
-    },
+    ...mapState({
+      beautifulExamplePages: (state) => state.beautifulExamplePages,
+    }),
   },
 };
 </script>

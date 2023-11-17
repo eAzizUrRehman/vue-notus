@@ -2,7 +2,8 @@
   <div
     class="h-16 w-16 rounded-full bg-tertiary-white shadow-xl flex-center"
   >
-    <img :src="component.iconUrl" alt="" class="w-7" />
+    <img
+    loading="lazy" :src="component.iconUrl" alt="" class="w-7" />
   </div>
   <h4 class="text-2xl font-bold mt-8 mb-4">
     {{ component.title }}
@@ -35,6 +36,7 @@
       {{ component.buttonText }}
     </a>
     <img
+    loading="lazy"
       v-if="component.buttonIcon"
       :src="component.buttonIcon"
       alt=""
@@ -53,6 +55,7 @@
   <div v-if="component.taglines" class="dim mt-10">
     <div v-for="tagline in component.taglines" :key="tagline.id" class="mb-4">
       <img
+    loading="lazy"
         :src="tagline.iconUrl"
         alt=""
         class="w-4 h-4 rounded-full inline mr-4"

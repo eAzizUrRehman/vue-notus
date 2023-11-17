@@ -9,6 +9,7 @@
       class="bg-secondary-green rounded py-2 px-4 cursor-pointer hover:shadow-lg transition-transform duration-1000 ease-in-out transform text-center"
     >
       <img
+    loading="lazy"
         :src="downloadIcon"
         alt=""
         width="12"

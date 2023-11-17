@@ -1,7 +1,12 @@
 <template>
   <section class="download-container-wider pb-40 w-full text-white flex">
     <div class="w-1/2">
-      <img :src="hero.image" alt="" class="w-11/12 rounded-3xl" />
+      <img
+        loading="lazy"
+        :src="hero.image"
+        alt=""
+        class="w-11/12 rounded-3xl"
+      />
       <div class="mt-8 flex-center gap-4">
         <DownloadButton
           :text="hero.button2Text"
@@ -25,17 +30,17 @@
       </p>
 
       <div class="flex-center mt-10">
-        <img :src="hero.icon1" alt="" width="20" />
-        <img :src="hero.icon1" alt="" width="20" />
-        <img :src="hero.icon1" alt="" width="20" />
-        <img :src="hero.icon1" alt="" width="20" />
-        <img :src="hero.icon1" alt="" width="20" />
+        <img loading="lazy" :src="hero.icon1" alt="" width="20" />
+        <img loading="lazy" :src="hero.icon1" alt="" width="20" />
+        <img loading="lazy" :src="hero.icon1" alt="" width="20" />
+        <img loading="lazy" :src="hero.icon1" alt="" width="20" />
+        <img loading="lazy" :src="hero.icon1" alt="" width="20" />
         <p class="ml-2 text-sm">
           {{ hero.rating }} ({{ hero.reviews }} Reviews)
         </p>
       </div>
       <div class="mt-5 flex-center gap-2">
-        <img :src="hero.icon2" alt="" width="20" />
+        <img loading="lazy" :src="hero.icon2" alt="" width="20" />
         <span>
           {{ hero.licence }}
         </span>
@@ -51,17 +56,16 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import { DownloadButton } from "../../components";
 export default {
   components: {
     DownloadButton,
   },
   computed: {
-    hero() {
-      return this.$store.state.downloadHero;
-    },
+    ...mapState({
+      hero: (state) => state.downloadHero,
+    }),
   },
 };
 </script>
-
-<style></style>

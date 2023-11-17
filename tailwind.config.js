@@ -28,7 +28,7 @@ export default {
 
         // download
         "download-nav-blue": "#00BBFF",
-        "text-color": "#666666",
+        "download-text-color": "#666666",
         "footer-bg-color": "#36275D",
         "footer-text-color": "#C3BFCF",
         "download-dim-black": "#464646",

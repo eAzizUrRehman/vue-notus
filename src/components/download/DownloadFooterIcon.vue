@@ -4,6 +4,7 @@
   >
     <a :href="url">
       <img
+    loading="lazy"
         :src="icon"
         :alt="label"
         class="w-full hover:opacity-100 opacity-80"

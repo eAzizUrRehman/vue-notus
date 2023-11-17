@@ -50,7 +50,7 @@
     <div class="w-full h-[0.6px] opacity-20 bg-footer-text-color"></div>
     <div class="my-20 mx-auto">
       <div class="flex-center flex-col gap-1">
-        <img :src="footer.logo" alt="" class="logo-white w-10" />
+        <img loading="lazy" :src="footer.logo" alt="" class="logo-white w-10" />
         <h3 class="text-xs tracking-wider">
           {{ footer.title }}
         </h3>
@@ -72,6 +72,7 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import { DownloadButton, DownloadFooterIcon } from "../../components";
 export default {
   components: {
@@ -79,9 +80,9 @@ export default {
     DownloadFooterIcon,
   },
   computed: {
-    footer() {
-      return this.$store.state.downloadFooter;
-    },
+    ...mapState({
+      footer: (state) => state.downloadFooter,
+    }),
   },
 };
 </script>

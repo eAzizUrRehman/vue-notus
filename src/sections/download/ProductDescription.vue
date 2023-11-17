@@ -1,13 +1,14 @@
 <template>
-  <div class="w-full"></div>
+  <section class="w-full"></section>
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   computed: {
-    productDescription() {
-      return this.$store.state.productDescription;
-    },
+    ...mapState({
+      productDescription: (state) => state.productDescription,
+    }),
   },
 };
 </script>
