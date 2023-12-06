@@ -1,39 +1,39 @@
 export default {
-  title:"What is Vue",
+  title: 'What is Vue',
   topline:
-    "Vue.js is a progressive JavaScript framework for building user interfaces.",
+    'Vue.js is a progressive JavaScript framework for building user interfaces.',
   contentList: [
     {
       id: 1,
-      title: "Vue.js",
-      link: "/",
+      title: 'Vue.js',
+      link: '/',
       subtopics: [
         {
           id: 1,
-          title: "Approachable",
-          link: "/",
+          title: 'Approachable',
+          link: '/'
         },
         {
           id: 2,
-          title: "Versatile",
-          link: "/",
+          title: 'Versatile',
+          link: '/'
         },
         {
           id: 3,
-          title: "Performant",
-          link: "/",
-        },
-      ],
+          title: 'Performant',
+          link: '/'
+        }
+      ]
     },
     {
       id: 2,
-      title: "A simple Vue Component",
-      link: "/",
+      title: 'A simple Vue Component',
+      link: '/'
     },
     {
       id: 3,
-      title: "Tutorials",
-      link: "/",
-    },
-  ],
-};
+      title: 'Tutorials',
+      link: '/'
+    }
+  ]
+}

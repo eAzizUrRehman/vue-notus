@@ -3,9 +3,9 @@
     <a
       :href="href"
       target="_blank"
-      class="w-fit md:px-8 px-4 md:py-4 py-2 rounded border-none outline-none text-white md:text-sm text-xs tracking-wider font-semibold uppercase flex-center gap-2 border-2"
+      class="flex-center w-fit gap-2 rounded border-2 border-none px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white outline-none md:px-8 md:py-4 md:text-sm"
       :style="{
-        backgroundColor: '#' + bgColor,
+        backgroundColor: '#' + bgColor
       }"
     >
       <img
@@ -24,12 +24,11 @@
 
 <script>
 export default {
- 
   props: {
     href: String,
     text: String,
     bgColor: String,
-    icon: String,
-  },
-};
+    icon: String
+  }
+}
 </script>

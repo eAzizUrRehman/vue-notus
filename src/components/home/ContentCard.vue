@@ -1,11 +1,10 @@
 <template>
   <div
-    class="ml-1 h-12 w-12 rounded-full bg-tertiary-white shadow-xl flex-center"
+    class="flex-center ml-1 h-12 w-12 rounded-full bg-tertiary-white shadow-xl"
   >
-    <img
-    loading="lazy" :src="contentCard.iconUrl" alt="" class="w-4" />
+    <img loading="lazy" :src="contentCard.iconUrl" alt="" class="w-4" />
   </div>
-  <h4 class="text-lg font-bold mt-4 mb-1">
+  <h4 class="mb-1 mt-4 text-lg font-bold">
     {{ contentCard.title }}
   </h4>
   <p class="dim text-sm">
@@ -15,9 +14,8 @@
 
 <script>
 export default {
- 
   props: {
-    contentCard: Object,
-  },
-};
+    contentCard: Object
+  }
+}
 </script>

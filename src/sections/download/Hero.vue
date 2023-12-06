@@ -1,5 +1,5 @@
 <template>
-  <section class="download-container-wider pb-40 w-full text-white flex">
+  <section class="download-container-wider flex w-full pb-40 text-white">
     <div class="w-1/2">
       <img
         loading="lazy"
@@ -7,7 +7,7 @@
         alt=""
         class="w-11/12 rounded-3xl"
       />
-      <div class="mt-8 flex-center gap-4">
+      <div class="flex-center mt-8 gap-4">
         <DownloadButton
           :text="hero.button2Text"
           :bgColor="hero.button2BgColor"
@@ -21,11 +21,11 @@
         />
       </div>
     </div>
-    <div class="w-1/2 flex-center flex-col pl-32">
+    <div class="flex-center w-1/2 flex-col pl-32">
       <h1 class="text-3xl">
         {{ hero.title }}
       </h1>
-      <p class="mt-5 uppercase text-sm font-base tracking-wide">
+      <p class="font-base mt-5 text-sm uppercase tracking-wide">
         {{ hero.tagline }}
       </p>
 
@@ -39,13 +39,13 @@
           {{ hero.rating }} ({{ hero.reviews }} Reviews)
         </p>
       </div>
-      <div class="mt-5 flex-center gap-2">
+      <div class="flex-center mt-5 gap-2">
         <img loading="lazy" :src="hero.icon2" alt="" width="20" />
         <span>
           {{ hero.licence }}
         </span>
       </div>
-      <div class="my-5 w-full h-[0.6px] bg-white opacity-30"></div>
+      <div class="my-5 h-[0.6px] w-full bg-white opacity-30"></div>
       <DownloadButton
         :text="hero.button1Text"
         :bgColor="hero.button1BgColor"
@@ -56,16 +56,16 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import { DownloadButton } from "../../components";
+import { mapState } from 'vuex'
+import { DownloadButton } from '../../components'
 export default {
   components: {
-    DownloadButton,
+    DownloadButton
   },
   computed: {
     ...mapState({
-      hero: (state) => state.downloadHero,
-    }),
-  },
-};
+      hero: (state) => state.downloadHero
+    })
+  }
+}
 </script>

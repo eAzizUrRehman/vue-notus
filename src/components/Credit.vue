@@ -1,6 +1,6 @@
 <template>
   <p
-    class="dim text-xs h-full flex-center capitalize"
+    class="dim flex-center h-full text-xs capitalize"
     :style="{ color: '#' + color }"
   >
     Originally designed & created by
@@ -21,8 +21,8 @@ export default {
   props: {
     color: {
       type: String,
-      required: true,
-    },
-  },
-};
+      required: true
+    }
+  }
+}
 </script>

@@ -1,8 +1,7 @@
 <template>
-  <section class="docs-content-padding text-center-text mb-10">
-    <img
-    loading="lazy" :src="overview.image" alt="" />
-    <p class="mt-4 font-thin tracking-wide text-md">
+  <section class="docs-content-padding mb-10 text-center-text">
+    <img loading="lazy" :src="overview.image" alt="" />
+    <p class="text-md mt-4 font-thin tracking-wide">
       {{ overview.imageDescription }}
     </p>
     <div class="grid grid-cols-3 gap-8">
@@ -16,13 +15,13 @@
       </div>
     </div>
     <div class="mt-20">
-      <h3 class="mt-4 mb-2 text-xl font-bold tracking-wide">
+      <h3 class="mb-2 mt-4 text-xl font-bold tracking-wide">
         {{ overview.resourcesAndCredits.title }}
       </h3>
-      <p class="dim text-base font-thin tracking-wide leading-relaxed">
+      <p class="dim text-base font-thin leading-relaxed tracking-wide">
         {{ overview.resourcesAndCredits.description }}
       </p>
-      <div class="mt-6 tracking-wide leading-relaxed">
+      <div class="mt-6 leading-relaxed tracking-wide">
         <div
           v-for="resource in overview.resourcesAndCredits.resources"
           :key="resource.id"
@@ -37,13 +36,13 @@
       </div>
     </div>
     <div class="mt-20">
-      <h3 class="mt-4 mb-2 text-xl font-bold tracking-wide">
+      <h3 class="mb-2 mt-4 text-xl font-bold tracking-wide">
         {{ overview.learnMore.title }}
       </h3>
-      <p class="dim text-base font-thin tracking-wide leading-relaxed">
+      <p class="dim text-base font-thin leading-relaxed tracking-wide">
         {{ overview.learnMore.description }}
       </p>
-      <div class="mt-6 tracking-wide leading-relaxed">
+      <div class="mt-6 leading-relaxed tracking-wide">
         <div v-for="link in overview.learnMore.links" :key="link.id">
           <p class="dim mt-1">
             Follow
@@ -54,11 +53,11 @@
         </div>
       </div>
     </div>
-    <h3 class="mt-4 mb-2 text-xl font-bold tracking-wide">Quick Start</h3>
+    <h3 class="mb-2 mt-4 text-xl font-bold tracking-wide">Quick Start</h3>
     <div class="mt-8 transition-transform duration-500 hover:-translate-y-1">
       <router-link
         to="/docs/getting-started/quick-start"
-        class="w-fit px-4 py-3 rounded border-none outline-none text-white md:text-sm text-xs tracking-wider font-semibold bg-[#2D3748]"
+        class="w-fit rounded border-none bg-[#2D3748] px-4 py-3 text-xs font-semibold tracking-wider text-white outline-none md:text-sm"
       >
         Quick start here
       </router-link>
@@ -66,22 +65,18 @@
   </section>
 </template>
 <script>
-import { overview } from "../../../store/docs/gettingStarted";
-import {
-  Button,
-  CentralContentHeader,
-  OverviewCard,
-} from "../../../components";
+import { overview } from '../../../store/docs/gettingStarted'
+import { Button, CentralContentHeader, OverviewCard } from '../../../components'
 export default {
   data() {
     return {
-      overview,
-    };
+      overview
+    }
   },
   components: {
     CentralContentHeader,
     OverviewCard,
-    Button,
-  },
-};
+    Button
+  }
+}
 </script>

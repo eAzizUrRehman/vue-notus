@@ -1,27 +1,24 @@
 <template>
-  <div
-    class="h-16 w-16 rounded-full bg-tertiary-white shadow-xl flex-center"
-  >
-    <img
-    loading="lazy" :src="component.iconUrl" alt="" class="w-7" />
+  <div class="flex-center h-16 w-16 rounded-full bg-tertiary-white shadow-xl">
+    <img loading="lazy" :src="component.iconUrl" alt="" class="w-7" />
   </div>
-  <h4 class="text-2xl font-bold mt-8 mb-4">
+  <h4 class="mb-4 mt-8 text-2xl font-bold">
     {{ component.title }}
   </h4>
-  <p class="dim text-md font-thin leading-relaxed max-w-sm">
+  <p class="dim text-md max-w-sm font-thin leading-relaxed">
     {{ component.description }}
   </p>
   <p
     v-if="component.description2"
-    class="dim text-md font-thin leading-relaxed max-w-sm my-6"
+    class="dim text-md my-6 max-w-sm font-thin leading-relaxed"
   >
     {{ component.description2 }}
   </p>
 
-  <div v-if="component.tags" class="my-8 flex flex-wrap gap-2 max-w-sm">
+  <div v-if="component.tags" class="my-8 flex max-w-sm flex-wrap gap-2">
     <div v-for="(tag, index) in component.tags" :key="index">
       <button
-        class="dim px-2 py-1 bg-tertiary-white text-xs tracking-wider uppercase rounded-xl"
+        class="dim rounded-xl bg-tertiary-white px-2 py-1 text-xs uppercase tracking-wider"
       >
         {{ tag }}
       </button>
@@ -30,23 +27,23 @@
 
   <button
     v-if="component.buttonText"
-    class="font-bold align-middle transition-opacity duration-300 ease-in-out hover:opacity-75"
+    class="align-middle font-bold transition-opacity duration-300 ease-in-out hover:opacity-75"
   >
     <a href="/" class="inline">
       {{ component.buttonText }}
     </a>
     <img
-    loading="lazy"
+      loading="lazy"
       v-if="component.buttonIcon"
       :src="component.buttonIcon"
       alt=""
-      class="dim w-4 inline my-auto ml-1"
+      class="dim my-auto ml-1 inline w-4"
     />
   </button>
   <button v-if="component.solidButtonText">
     <a
       href="/"
-      class="uppercase font-semibold text-xs tracking-wider bg-[#334155] px-6 py-3 rounded-md"
+      class="rounded-md bg-[#334155] px-6 py-3 text-xs font-semibold uppercase tracking-wider"
     >
       {{ component.solidButtonText }}
     </a>
@@ -55,10 +52,10 @@
   <div v-if="component.taglines" class="dim mt-10">
     <div v-for="tagline in component.taglines" :key="tagline.id" class="mb-4">
       <img
-    loading="lazy"
+        loading="lazy"
         :src="tagline.iconUrl"
         alt=""
-        class="w-4 h-4 rounded-full inline mr-4"
+        class="mr-4 inline h-4 w-4 rounded-full"
       />
       <p class="inline">
         {{ tagline.tagline }}
@@ -70,7 +67,7 @@
 <script>
 export default {
   props: {
-    component: Object,
-  },
-};
+    component: Object
+  }
+}
 </script>

@@ -1,0 +1,9 @@
+# Ignore all HTML files:
+*.html
+
+# Ignore all files in the dist directory:
+dist/
+
+# Ignore artifacts:
+build
+coverage

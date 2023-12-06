@@ -1,0 +1,1 @@
+import{_ as e,c as t,o}from"./index-ead9d499.js";const s={},r={class:"mx-auto mt-10 max-w-md px-10 text-center font-bold"};function a(n,c,p,i,l,u){return o(),t("p",r," Our developers will make this page live as soon as they wake up from their naps. 😴 Keep your eyes peeled, and thanks for your trust in us! 😄 ")}const d=e(s,[["render",a]]);export{d as default};

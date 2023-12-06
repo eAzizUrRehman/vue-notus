@@ -1,29 +1,29 @@
 <template>
-  <section class="w-full h-full flex flex-col">
+  <section class="flex h-full w-full flex-col">
     <div
-      class="flex flex-1 w-full h-full gap-8 max-h-[84.62vh] overflow-y-auto"
+      class="flex h-full max-h-[84.62vh] w-full flex-1 gap-8 overflow-y-auto"
     >
       <div class="w-full">
         <div class="docs-content-padding text-center-text">
           <h1
-            class="px-5 py-2.5 my-1.5 font-semibold text-2xl tracking-wide border-l-2 border-l-center-title-border"
+            class="my-1.5 border-l-2 border-l-center-title-border px-5 py-2.5 text-2xl font-semibold tracking-wide"
           >
             {{ curTitle }}
           </h1>
-          <p class="my-7 text-sm max-w-2xl">
+          <p class="my-7 max-w-2xl text-sm">
             {{ curTopline }}
           </p>
-          <div class="w-full h-[0.6px] bg-dim-gray opacity-40 my-9"></div>
+          <div class="my-9 h-[0.6px] w-full bg-dim-gray opacity-40"></div>
         </div>
-        <div class="min-w-full flex">
+        <div class="flex min-w-full">
           <router-view />
         </div>
       </div>
       <div class="min-w-[28%]">
-        <div class="mt-12 pl-6 border-l-[0.6px] fixed">
+        <div class="fixed mt-12 border-l-[0.6px] pl-6">
           <div v-for="list in curContentList" :key="list.id">
             <h3
-              class="dim max-w-[10rem] mb-1 text-sm tracking-wider leading-normal hover:text-center-link cursor-pointer"
+              class="dim mb-1 max-w-[10rem] cursor-pointer text-sm leading-normal tracking-wider hover:text-center-link"
             >
               <router-link to="/">
                 {{ list.title }}
@@ -34,15 +34,15 @@
       </div>
     </div>
     <div class="mb-4">
-      <div class="w-full h-[0.6px] bg-dim-gray opacity-40"></div>
+      <div class="h-[0.6px] w-full bg-dim-gray opacity-40"></div>
       <div
-        class="mt-3 w-full dim text-center-text text-xs px-[52px] mr-12 flex justify-between"
+        class="dim mr-12 mt-3 flex w-full justify-between px-[52px] text-xs text-center-text"
       >
         <p class="font-thin">
           Copyright © Nov 2023
           <router-link
             :to="{ name: 'home' }"
-            class="font-bold text-sm text-center-link cursor-pointer"
+            class="cursor-pointer text-sm font-bold text-center-link"
           >
             Vue Notus by Aziz - Creative Pulse
           </router-link>
@@ -67,8 +67,8 @@
 export default {
   data() {
     return {
-      currentRoutePath: "",
-    };
+      currentRoutePath: ''
+    }
   },
   computed: {
     curTitle() {
@@ -76,7 +76,7 @@ export default {
         if (this.currentRoutePath.includes(topic.link)) {
           for (const subtopic of topic.subtopics) {
             if (this.currentRoutePath.includes(subtopic.link)) {
-              return subtopic.content.title;
+              return subtopic.content.title
             }
           }
         }
@@ -87,7 +87,7 @@ export default {
         if (this.currentRoutePath.includes(topic.link)) {
           for (const subtopic of topic.subtopics) {
             if (this.currentRoutePath.includes(subtopic.link)) {
-              return subtopic.content.topline;
+              return subtopic.content.topline
             }
           }
         }
@@ -98,18 +98,18 @@ export default {
         if (this.currentRoutePath.includes(topic.link)) {
           for (const subtopic of topic.subtopics) {
             if (this.currentRoutePath.includes(subtopic.link)) {
-              return subtopic.content.contentList;
+              return subtopic.content.contentList
             }
           }
         }
       }
-    },
+    }
   },
   mounted() {
-    this.currentRoutePath = this.$route.path;
+    this.currentRoutePath = this.$route.path
     this.$router.afterEach((to) => {
-      this.currentRoutePath = to.path;
-    });
-  },
-};
+      this.currentRoutePath = to.path
+    })
+  }
+}
 </script>

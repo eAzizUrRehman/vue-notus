@@ -2,7 +2,7 @@
   <div class="w-full font-Poppins text-primary-gray">
     <div
       v-if="isNotDocsRoute && isNotDownloadRoute"
-      class="w-full sticky top-0 z-50 shadow-md bg-tertiary-white"
+      class="sticky top-0 z-50 w-full bg-tertiary-white shadow-md"
     >
       <Navbar />
     </div>
@@ -11,20 +11,19 @@
 </template>
 
 <script>
-import Navbar from "./sections/Navbar.vue";
+import Navbar from './sections/Navbar.vue'
 
 export default {
- 
   components: {
-    Navbar,
+    Navbar
   },
   computed: {
     isNotDocsRoute() {
-      return !this.$route.path.startsWith("/docs");
+      return !this.$route.path.startsWith('/docs')
     },
     isNotDownloadRoute() {
-      return !this.$route.path.startsWith("/download");
-    },
-  },
-};
+      return !this.$route.path.startsWith('/download')
+    }
+  }
+}
 </script>

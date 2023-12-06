@@ -6,56 +6,56 @@ import {
   angularIcon,
   laravelIcon,
   bootstrapIcon,
-  reactNativeIcon,
-} from "../../../assets/download";
+  reactNativeIcon
+} from '../../../assets/download'
 
 export default [
   {
     id: 1,
-    label: "Big Bundle",
+    label: 'Big Bundle',
     iconUrl: bigBundleIcon,
-    url: "/",
+    url: '/'
   },
   {
     id: 2,
-    label: "React Bundle",
+    label: 'React Bundle',
     iconUrl: reactIcon,
-    url: "/",
+    url: '/'
   },
   {
     id: 3,
-    label: "Tailwind Bundle",
+    label: 'Tailwind Bundle',
     iconUrl: tailwindCSSIcon,
-    url: "/",
+    url: '/'
   },
   {
     id: 4,
-    label: "Vuejs Bundle",
+    label: 'Vuejs Bundle',
     iconUrl: vuejsIcon,
-    url: "/",
+    url: '/'
   },
   {
     id: 5,
-    label: "Angular Bundle",
+    label: 'Angular Bundle',
     iconUrl: angularIcon,
-    url: "/",
+    url: '/'
   },
   {
     id: 6,
-    label: "Laravel Bundle",
+    label: 'Laravel Bundle',
     iconUrl: laravelIcon,
-    url: "/",
+    url: '/'
   },
   {
     id: 7,
-    label: "Bootstrap Bundle",
+    label: 'Bootstrap Bundle',
     iconUrl: bootstrapIcon,
-    url: "/",
+    url: '/'
   },
   {
     id: 8,
-    label: "Mobile Bundle",
+    label: 'Mobile Bundle',
     iconUrl: reactNativeIcon,
-    url: "/",
-  },
-];
+    url: '/'
+  }
+]

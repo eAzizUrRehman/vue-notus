@@ -1,19 +1,19 @@
 <template>
   <router-link
     :to="{
-      name: 'download',
+      name: 'download'
     }"
-    class="font-medium text-tertiary-white text-xs"
+    class="text-xs font-medium text-tertiary-white"
   >
     <div
-      class="bg-secondary-green rounded py-2 px-4 cursor-pointer hover:shadow-lg transition-transform duration-1000 ease-in-out transform text-center"
+      class="transform cursor-pointer rounded bg-secondary-green px-4 py-2 text-center transition-transform duration-1000 ease-in-out hover:shadow-lg"
     >
       <img
-    loading="lazy"
+        loading="lazy"
         :src="downloadIcon"
         alt=""
         width="12"
-        class="cursor-pointer hover:scale-125 transform transition-transform duration-100 ease-in-out inline mr-0.5"
+        class="mr-0.5 inline transform cursor-pointer transition-transform duration-100 ease-in-out hover:scale-125"
       />
       Download
     </div>
@@ -21,12 +21,12 @@
 </template>
 
 <script>
-import { downloadIcon } from "../../assets/home";
+import { downloadIcon } from '../../assets/home'
 export default {
   data() {
     return {
-      downloadIcon,
-    };
-  },
-};
+      downloadIcon
+    }
+  }
+}
 </script>

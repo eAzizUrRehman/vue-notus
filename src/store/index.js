@@ -1,6 +1,6 @@
-import { createStore } from "vuex";
-import state from "./state";
+import { createStore } from 'vuex'
+import state from './state'
 
-const store = createStore({ state });
+const store = createStore({ state })
 
-export default store;
+export default store

@@ -1,64 +1,64 @@
 <template>
   <section
-    class="container-tighter flex lg:flex-row flex-col lg:scale-100 md:scale-125 sm:scale-110 scale-100"
+    class="container-tighter flex scale-100 flex-col sm:scale-110 md:scale-125 lg:scale-100 lg:flex-row"
   >
-    <div class="lg:mx-0 mx-auto lg:w-1/2 w-fit lg:mb-0 mb-20">
+    <div class="mx-auto mb-20 w-fit lg:mx-0 lg:mb-0 lg:w-1/2">
       <ContentDetailsCard :component="cssComponents" />
     </div>
     <div
-      class="lg:mx-0 mx-auto px-20 lg:w-1/2 md:w-[38rem] sm:w-[35rem] w-[20rem] aspect-[13/10] relative block lg:mt-0 mt-20"
+      class="relative mx-auto mt-20 block aspect-[13/10] w-[20rem] px-20 sm:w-[35rem] md:w-[38rem] lg:mx-0 lg:mt-0 lg:w-1/2"
     >
       <img
         loading="lazy"
         :src="excellentServices"
         alt=""
-        class="shadow-lg absolute lg:w-48 md:w-56 sm:w-48 w-36 rounded-lg sm:left-20 left-4 sm:-top-20 -top-28"
+        class="absolute -top-28 left-4 w-36 rounded-lg shadow-lg sm:-top-20 sm:left-20 sm:w-48 md:w-56 lg:w-48"
       />
       <img
         loading="lazy"
         :src="github"
         alt=""
-        class="shadow-lg absolute lg:w-24 md:w-32 sm:w-24 w-20 lg:top-32 md:top-40 sm:top-32 top-12 sm:left-48 left-24 rounded"
+        class="absolute left-24 top-12 w-20 rounded shadow-lg sm:left-48 sm:top-32 sm:w-24 md:top-40 md:w-32 lg:top-32 lg:w-24"
       />
       <img
         loading="lazy"
         :src="rominaHadid"
         alt=""
-        class="shadow-lg absolute lg:w-48 md:w-60 sm:w-52 w-32 right-0 lg:top-0 md:-top-6 rounded-lg"
+        class="absolute right-0 w-32 rounded-lg shadow-lg sm:w-52 md:-top-6 md:w-60 lg:top-0 lg:w-48"
       />
       <img
         loading="lazy"
         :src="freeRevision"
         alt=""
-        class="shadow-lg absolute lg:w-52 md:w-56 sm:w-52 w-32 sm:bottom-16 bottom-12 lg:-left-8 md:left-0 sm:-left-8 -left-4 rounded-lg"
+        class="absolute -left-4 bottom-12 w-32 rounded-lg shadow-lg sm:-left-8 sm:bottom-16 sm:w-52 md:left-0 md:w-56 lg:-left-8 lg:w-52"
       />
       <img
         loading="lazy"
         :src="regular"
         alt=""
-        class="shadow-lg absolute lg:w-32 md:w-40 sm:w-36 w-24 lg:bottom-32 md:bottom-36 sm:bottom-32 bottom-16 sm:right-32 right-20 rounded-lg"
+        class="absolute bottom-16 right-20 w-24 rounded-lg shadow-lg sm:bottom-32 sm:right-32 sm:w-36 md:bottom-36 md:w-40 lg:bottom-32 lg:w-32"
       />
       <img
         loading="lazy"
         :src="indigoMenu"
         alt=""
-        class="shadow-lg absolute w-[95%] bottom-0 right-0 rounded-lg"
+        class="absolute bottom-0 right-0 w-[95%] rounded-lg shadow-lg"
       />
     </div>
   </section>
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState } from 'vuex'
 import {
   excellentServices,
   github,
   indigoMenu,
   regular,
   rominaHadid,
-  freeRevision,
-} from "../../assets/home";
-import { ContentDetailsCard } from "../../components";
+  freeRevision
+} from '../../assets/home'
+import { ContentDetailsCard } from '../../components'
 
 export default {
   data() {
@@ -68,16 +68,16 @@ export default {
       indigoMenu,
       regular,
       rominaHadid,
-      freeRevision,
-    };
+      freeRevision
+    }
   },
   components: {
-    ContentDetailsCard,
+    ContentDetailsCard
   },
   computed: {
     ...mapState({
-      cssComponents: (state) => state.cssComponents,
-    }),
-  },
-};
+      cssComponents: (state) => state.cssComponents
+    })
+  }
+}
 </script>

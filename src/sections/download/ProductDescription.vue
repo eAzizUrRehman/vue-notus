@@ -3,12 +3,12 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState } from 'vuex'
 export default {
   computed: {
     ...mapState({
-      productDescription: (state) => state.productDescription,
-    }),
-  },
-};
+      productDescription: (state) => state.productDescription
+    })
+  }
+}
 </script>

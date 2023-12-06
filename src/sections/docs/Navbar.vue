@@ -1,47 +1,47 @@
 <template>
   <header
-    class="docs-container text-white py-4 flex justify-between items-center"
+    class="docs-container flex items-center justify-between py-4 text-white"
   >
-    <div class="flex justify-between items-center gap-8 w-fit">
-      <div class="flex justify-between gap-3 w-fit">
+    <div class="flex w-fit items-center justify-between gap-8">
+      <div class="flex w-fit justify-between gap-3">
         <router-link
           :to="{ name: 'home' }"
-          class="dim font-medium text-sm uppercase cursor-pointer"
+          class="dim cursor-pointer text-sm font-medium uppercase"
         >
           Vue Notus
         </router-link>
-        <div class="dim pr-[2px] my-0.5 bg-white"></div>
+        <div class="dim my-0.5 bg-white pr-[2px]"></div>
         <router-link
           :to="{ name: 'docs' }"
-          class="dim font-medium text-sm uppercase cursor-pointer"
+          class="dim cursor-pointer text-sm font-medium uppercase"
         >
           Docs
         </router-link>
       </div>
       <router-link
         :to="{ name: 'live-preview' }"
-        class="dim text-sm cursor-pointer"
+        class="dim cursor-pointer text-sm"
       >
         Live Preview
       </router-link>
-      <router-link :to="{ name: 'support' }" class="dim text-sm cursor-pointer">
+      <router-link :to="{ name: 'support' }" class="dim cursor-pointer text-sm">
         Support
       </router-link>
     </div>
     <div class="hidden sm:block">
       <Credit color="ffffff" />
     </div>
-    <router-link :to="{ name: 'download' }" class="dim text-sm cursor-pointer">
+    <router-link :to="{ name: 'download' }" class="dim cursor-pointer text-sm">
       Download Free
     </router-link>
   </header>
 </template>
 
 <script>
-import { Credit } from "../../components";
+import { Credit } from '../../components'
 export default {
   components: {
-    Credit,
-  },
-};
+    Credit
+  }
+}
 </script>

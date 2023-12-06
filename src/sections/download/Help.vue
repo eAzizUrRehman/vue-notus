@@ -1,17 +1,17 @@
 <template>
   <section
-    class="download-container-tighter w-full px-5 py-10 rounded-2xl bg-white text-download-text-color -translate-y-20"
+    class="download-container-tighter w-full -translate-y-20 rounded-2xl bg-white px-5 py-10 text-download-text-color"
   >
-    <div class="max-w-lg w-full mx-auto">
-      <h3 class="text-3xl font-semibold text-center">
+    <div class="mx-auto w-full max-w-lg">
+      <h3 class="text-center text-3xl font-semibold">
         {{ help.topline }}
       </h3>
-      <p class="text-center text-lg mt-10 mb-5">
+      <p class="mb-5 mt-10 text-center text-lg">
         {{ help.details }}
       </p>
-      <div class="flex justify-start flex-wrap gap-2">
+      <div class="flex flex-wrap justify-start gap-2">
         <ul v-for="button in help.buttons" :key="button.id">
-          <li class="hover:opacity-100 opacity-70">
+          <li class="opacity-70 hover:opacity-100">
             <DownloadButton
               :text="button.text"
               :icon="button.icon"
@@ -23,20 +23,19 @@
         </ul>
       </div>
     </div>
-    <div class="flex mt-5 ml-5">
+    <div class="ml-5 mt-5 flex">
       <div
-        class="w-14 h-14 border-2 border-[#666666] rounded-full border-opacity-60 flex-center p-1.5"
+        class="flex-center h-14 w-14 rounded-full border-2 border-[#666666] border-opacity-60 p-1.5"
       >
-        <img
-    loading="lazy" :src="help.logo" alt="" class="logo-black" />
+        <img loading="lazy" :src="help.logo" alt="" class="logo-black" />
       </div>
       <div class="ml-4 text-download-dim-black">
-        <div class="flex gap-2 items-end">
+        <div class="flex items-end gap-2">
           <span>
             {{ help.testimonial.username }}
           </span>
           <span
-            class="text-[9px] text-download-nav-blue px-1.5 py-0.5 border-[0.5px] border-download-nav-blue rounded-md uppercase"
+            class="rounded-md border-[0.5px] border-download-nav-blue px-1.5 py-0.5 text-[9px] uppercase text-download-nav-blue"
           >
             {{ help.testimonial.action }}
           </span>
@@ -50,7 +49,7 @@
       </div>
     </div>
     <div
-      class="mt-6 mb-2 h-[0.6px] w-full bg-download-text-color opacity-10"
+      class="mb-2 mt-6 h-[0.6px] w-full bg-download-text-color opacity-10"
     ></div>
     <p class="ml-5">
       {{ help.login.instruction }}
@@ -64,16 +63,16 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import { DownloadButton } from "../../components";
+import { mapState } from 'vuex'
+import { DownloadButton } from '../../components'
 export default {
   computed: {
     ...mapState({
-      help: (state) => state.help,
-    }),
+      help: (state) => state.help
+    })
   },
   components: {
-    DownloadButton,
-  },
-};
+    DownloadButton
+  }
+}
 </script>

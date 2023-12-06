@@ -8,18 +8,18 @@ import {
   beautifulExamplePages,
   openSource,
   starterKit,
-  footer,
-} from "./home";
+  footer
+} from './home'
 
-import sidebar from "./docs";
+import sidebar from './docs'
 
 import {
   quickLinks,
   hero as downloadHero,
   sharingIsCaring,
   help,
-  footer as downloadFooter,
-} from "./download";
+  footer as downloadFooter
+} from './download'
 
 export default {
   // home
@@ -42,5 +42,5 @@ export default {
   downloadHero,
   sharingIsCaring,
   help,
-  downloadFooter,
-};
+  downloadFooter
+}

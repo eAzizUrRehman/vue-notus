@@ -1,6 +1,6 @@
 export default {
-  title:"License",
+  title: 'License',
   topline:
-    "Learn more about the licenses Vue Notus offers and purchase the one that covers the needs of your project.",
-  contentList: [],
-};
+    'Learn more about the licenses Vue Notus offers and purchase the one that covers the needs of your project.',
+  contentList: []
+}

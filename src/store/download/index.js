@@ -1,5 +1,5 @@
-import links from "./quickLinks";
-import footerContent from "./footer.js";
+import links from './quickLinks'
+import footerContent from './footer.js'
 
 import {
   logo,
@@ -16,125 +16,125 @@ import {
   bgCommentIcon,
   sharingIsCaringFacebookIcon,
   sharingIsCaringTwitterIcon,
-  sharingIsCaringEmailIcon,
-} from "../../assets/download";
+  sharingIsCaringEmailIcon
+} from '../../assets/download'
 
 export const quickLinks = {
-  id: "quickLinks",
-  title: "Creative Pulse",
-  links: links,
-};
+  id: 'quickLinks',
+  title: 'Creative Pulse',
+  links: links
+}
 export const hero = {
-  id: "hero",
-  title: "Vue Notus",
-  tagline: "The free Tailwind CSS UI kit and admin.",
+  id: 'hero',
+  title: 'Vue Notus',
+  tagline: 'The free Tailwind CSS UI kit and admin.',
   icon1: starIcon,
-  rating: "4.90/5",
-  reviews: "17",
-  licence: "MIT License",
+  rating: '4.90/5',
+  reviews: '17',
+  licence: 'MIT License',
   icon2: licenceIcon,
   image: heroImg,
 
-  button1Text: "Free Download",
-  button1BgColor: "ffffff",
-  button1Color: "666666",
+  button1Text: 'Free Download',
+  button1BgColor: 'ffffff',
+  button1Color: '666666',
 
-  button2Text: "Live Preview",
+  button2Text: 'Live Preview',
   button2BgColor: null,
   button2Color: null,
-  button2BorderColor: "ffffff",
+  button2BorderColor: 'ffffff',
 
-  button3Text: "Docs",
-  button3BgColor: "ffffff",
-  button3Color: "666666",
-};
+  button3Text: 'Docs',
+  button3BgColor: 'ffffff',
+  button3Color: '666666'
+}
 
 export const productDescription = {
-  id: "productDescription",
-  topline: "Free tailwind css and vuejs ui kit and admin",
-  title: "Product description",
-};
+  id: 'productDescription',
+  topline: 'Free tailwind css and vuejs ui kit and admin',
+  title: 'Product description'
+}
 
 export const help = {
-  id: "help",
-  topline: "We are here to help you!",
-  details: "1 Web Developer commented on this product",
+  id: 'help',
+  topline: 'We are here to help you!',
+  details: '1 Web Developer commented on this product',
   buttons: [
     {
       id: 1,
-      text: "Github",
+      text: 'Github',
       icon: helpGithubIcon,
-      link: "/",
+      link: '/'
     },
     {
       id: 2,
-      text: "Docs",
+      text: 'Docs',
       icon: helpDocsIcon,
-      link: "/",
+      link: '/'
     },
     {
       id: 3,
-      text: "Knowledge Center",
+      text: 'Knowledge Center',
       icon: helpKnowledgeCenterIcon,
-      link: "/",
+      link: '/'
     },
     {
       id: 4,
-      text: "Custom Development",
+      text: 'Custom Development',
       icon: helpCustomDevelopmentIcon,
-      link: "/",
+      link: '/'
     },
     {
       id: 5,
-      text: "Discord Server",
+      text: 'Discord Server',
       icon: helpDiscordIcon,
-      link: "/",
-    },
+      link: '/'
+    }
   ],
   logo: logo,
   testimonial: {
-    username: "hoanganh25991",
-    action: "downloaded",
-    time: "1 year ago",
-    comment: "Thank you, it's real good Vue component with TailwindCSS",
+    username: 'hoanganh25991',
+    action: 'downloaded',
+    time: '1 year ago',
+    comment: "Thank you, it's real good Vue component with TailwindCSS"
   },
 
   login: {
-    instruction: "You have to be logged in to post a comment.",
-    buttonText: "Login here.",
-    buttonLink: "/",
-  },
-};
+    instruction: 'You have to be logged in to post a comment.',
+    buttonText: 'Login here.',
+    buttonLink: '/'
+  }
+}
 
 export const sharingIsCaring = {
-  id: "sharingIsCaring",
-  text: "Sharing is caring!",
+  id: 'sharingIsCaring',
+  text: 'Sharing is caring!',
   buttons: [
     {
       id: 1,
-      label: "Facebook",
+      label: 'Facebook',
       icon: sharingIsCaringFacebookIcon,
       color: null,
-      bgColor: "3A558E",
-      link: "/",
+      bgColor: '3A558E',
+      link: '/'
     },
     {
       id: 2,
-      label: "Twitter",
+      label: 'Twitter',
       icon: sharingIsCaringTwitterIcon,
       color: null,
-      bgColor: "519FDB",
-      link: "/",
+      bgColor: '519FDB',
+      link: '/'
     },
     {
       id: 3,
-      label: "Email",
+      label: 'Email',
       icon: sharingIsCaringEmailIcon,
-      color: "666666",
-      bgColor: "ffffff",
-      link: "/",
-    },
-  ],
-};
+      color: '666666',
+      bgColor: 'ffffff',
+      link: '/'
+    }
+  ]
+}
 
-export const footer = footerContent;
+export const footer = footerContent

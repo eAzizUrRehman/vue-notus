@@ -1,10 +1,10 @@
 <template>
-  <div class="w-full sticky top-0 z-50 shadow-md bg-white">
+  <div class="sticky top-0 z-50 w-full bg-white shadow-md">
     <transition name="fade">
       <div
         v-if="showNavbar"
         :class="{
-          'fixed top-0 left-0 w-full z-50 bg-white shadow-lg': showNavbar,
+          'fixed left-0 top-0 z-50 w-full bg-white shadow-lg': showNavbar
         }"
       >
         <Navbar />
@@ -20,7 +20,7 @@
           <!-- <ProductDescription /> -->
         </div>
       </div>
-      <div class="bg-download-dim-black comment-background-img pb-20">
+      <div class="comment-background-img bg-download-dim-black pb-20">
         <Help />
         <SharingIsCaring />
       </div>
@@ -39,28 +39,27 @@ import {
   ProductDescription,
   SharingIsCaring,
   Help,
-  Footer,
-} from "../sections/download";
+  Footer
+} from '../sections/download'
 export default {
   data() {
     return {
-      showNavbar: false,
-    };
+      showNavbar: false
+    }
   },
   mounted() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll)
   },
   destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
     handleScroll() {
       const scrollPosition =
-        window.scrollY || document.documentElement.scrollTop;
+        window.scrollY || document.documentElement.scrollTop
 
-      this.showNavbar = scrollPosition >= 100;
-      console.log(this.showNavbar);
-    },
+      this.showNavbar = scrollPosition >= 100
+    }
   },
   components: {
     Navbar,
@@ -69,9 +68,9 @@ export default {
     ProductDescription,
     SharingIsCaring,
     Help,
-    Footer,
-  },
-};
+    Footer
+  }
+}
 </script>
 
 <style>

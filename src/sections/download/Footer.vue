@@ -1,7 +1,7 @@
 <template>
-  <footer class="download-container-wider w-full pt-10 flex flex-col">
+  <footer class="download-container-wider flex w-full flex-col pt-10">
     <div class="download-container-tighter w-full">
-      <div class="flex justify-between items-end">
+      <div class="flex items-end justify-between">
         <div v-for="stat in footer.stats" :key="stat.id">
           <p class="flex flex-col items-start justify-center gap-1">
             <span class="text-xl">
@@ -22,7 +22,7 @@
             <input
               type="text"
               :placeholder="footer.newsletter.placeholder"
-              class="px-4 rounded bg-[#4A3D6E]"
+              class="rounded bg-[#4A3D6E] px-4"
             />
             <DownloadButton
               :text="footer.newsletter.buttonText"
@@ -32,13 +32,13 @@
           </div>
         </div>
       </div>
-      <div class="my-20 flex justify-between items-start tracking-wide">
+      <div class="my-20 flex items-start justify-between tracking-wide">
         <div v-for="column in footer.footerLinks" :key="column.id">
-          <p class="text-lg mb-4">
+          <p class="mb-4 text-lg">
             {{ column.label }}
           </p>
           <ul v-for="link in column.links" :key="link.id" class="">
-            <li class="mt-2 text-footer-text-color text-sm hover:text-white">
+            <li class="mt-2 text-sm text-footer-text-color hover:text-white">
               <a :href="link.url">
                 {{ link.label }}
               </a>
@@ -47,14 +47,14 @@
         </div>
       </div>
     </div>
-    <div class="w-full h-[0.6px] opacity-20 bg-footer-text-color"></div>
-    <div class="my-20 mx-auto">
+    <div class="h-[0.6px] w-full bg-footer-text-color opacity-20"></div>
+    <div class="mx-auto my-20">
       <div class="flex-center flex-col gap-1">
         <img loading="lazy" :src="footer.logo" alt="" class="logo-white w-10" />
         <h3 class="text-xs tracking-wider">
           {{ footer.title }}
         </h3>
-        <div class="mt-4 flex-center gap-2">
+        <div class="flex-center mt-4 gap-2">
           <div v-for="handle in footer.socialMedia" :key="handle.id">
             <DownloadFooterIcon
               :label="handle.label"
@@ -72,17 +72,17 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import { DownloadButton, DownloadFooterIcon } from "../../components";
+import { mapState } from 'vuex'
+import { DownloadButton, DownloadFooterIcon } from '../../components'
 export default {
   components: {
     DownloadButton,
-    DownloadFooterIcon,
+    DownloadFooterIcon
   },
   computed: {
     ...mapState({
-      footer: (state) => state.downloadFooter,
-    }),
-  },
-};
+      footer: (state) => state.downloadFooter
+    })
+  }
+}
 </script>

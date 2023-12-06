@@ -1,16 +1,16 @@
 <template>
   <section
-    class="container-wider max-w-1/2 h-screen max-h-[860px] bg-white flex justify-between items-center lg:scale-100 sm:scale-110 scale-100"
+    class="container-wider max-w-1/2 flex h-screen max-h-[860px] scale-100 items-center justify-between bg-white sm:scale-110 lg:scale-100"
   >
     <div
-      class="flex flex-col justify-start items-start w-[71rem] lg:px-0 md:px-20 sm:pl-10 px-5"
+      class="flex w-[71rem] flex-col items-start justify-start px-5 sm:pl-10 md:px-20 lg:px-0"
     >
       <h1
-        class="dim max-w-xl text-3xl font-semibold tracking-wide leading-normal"
+        class="dim max-w-xl text-3xl font-semibold leading-normal tracking-wide"
       >
         {{ hero.title }}
       </h1>
-      <p class="mt-4 max-w-xl mb-10 text-md tracking-wide leading-relaxed">
+      <p class="text-md mb-10 mt-4 max-w-xl leading-relaxed tracking-wide">
         <span class="dim">
           {{ hero.description1 }}
         </span>
@@ -22,40 +22,40 @@
         </span>
       </p>
 
-      <div class="dim flex justify-start items-center gap-1.5">
+      <div class="dim flex items-center justify-start gap-1.5">
         <Button :text="hero.buttonText1" bgColor="10B981" href="/" />
         <Button :text="hero.buttonText2" bgColor="334155" href="/" />
       </div>
     </div>
-    <div class="w-full hidden lg:block">
+    <div class="hidden w-full lg:block">
       <img
         loading="lazy"
         :src="heroImg"
         alt=""
-        class="object-cover translate-x-24 scale-110"
+        class="translate-x-24 scale-110 object-cover"
       />
     </div>
   </section>
 </template>
 
 <script>
-import { mapState } from "vuex";
-import { Button } from "../../components";
-import { heroImg } from "../../assets/home";
+import { mapState } from 'vuex'
+import { Button } from '../../components'
+import { heroImg } from '../../assets/home'
 
 export default {
   data() {
     return {
-      heroImg,
-    };
+      heroImg
+    }
   },
   components: {
-    Button,
+    Button
   },
   computed: {
     ...mapState({
-      hero: (state) => state.hero,
-    }),
-  },
-};
+      hero: (state) => state.hero
+    })
+  }
+}
 </script>

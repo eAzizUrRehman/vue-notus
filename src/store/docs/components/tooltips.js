@@ -1,39 +1,39 @@
 export default {
-  title: "Vue Notus Tooltips",
+  title: 'Vue Notus Tooltips',
   topline:
-    "Pop over component that appears to the left/top/right/bottom of a button on user hover. The dynamic part of them is made using Vue and the styles are done using Tailwind CSS.",
+    'Pop over component that appears to the left/top/right/bottom of a button on user hover. The dynamic part of them is made using Vue and the styles are done using Tailwind CSS.',
   contentList: [
     {
       id: 1,
-      title: "Examples",
-      link: "/",
+      title: 'Examples',
+      link: '/',
       subtopics: [
         {
           id: 1,
-          title: "Left",
-          link: "/",
+          title: 'Left',
+          link: '/'
         },
         {
           id: 2,
-          title: "Top",
-          link: "/",
+          title: 'Top',
+          link: '/'
         },
         {
           id: 3,
-          title: "Right",
-          link: "/",
+          title: 'Right',
+          link: '/'
         },
         {
           id: 4,
-          title: "Bottom",
-          link: "/",
-        },
-      ],
+          title: 'Bottom',
+          link: '/'
+        }
+      ]
     },
     {
       id: 2,
-      title: "Props",
-      link: "/",
-    },
-  ],
-};
+      title: 'Props',
+      link: '/'
+    }
+  ]
+}

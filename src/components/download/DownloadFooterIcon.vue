@@ -1,13 +1,13 @@
 <template>
   <div
-    class="w-10 h-10 p-2.5 rounded-full border-[1px] border-white cursor-pointer hover:opacity-50 opacity-80"
+    class="h-10 w-10 cursor-pointer rounded-full border-[1px] border-white p-2.5 opacity-80 hover:opacity-50"
   >
     <a :href="url">
       <img
-    loading="lazy"
+        loading="lazy"
         :src="icon"
         :alt="label"
-        class="w-full hover:opacity-100 opacity-80"
+        class="w-full opacity-80 hover:opacity-100"
       />
     </a>
   </div>
@@ -18,10 +18,10 @@ export default {
   props: {
     icon: {
       type: String,
-      required: true,
+      required: true
     },
     url: String,
-    label: String,
-  },
-};
+    label: String
+  }
+}
 </script>

@@ -1,9 +1,9 @@
 <template>
   <section
-    class="xl:max-w-[1250px] lg:max-w-[980px] md:max-w-[720px] xs:max-w-[680px] max-w-[380px] xl:px-60 lg:px-44 md:px-32 px-16 lg:py-20 py-10 mx-auto flex flex-col items-center bg-tertiary-white rounded-xl translate-y-32 shadow-xl"
+    class="xs:max-w-[680px] mx-auto flex max-w-[380px] translate-y-32 flex-col items-center rounded-xl bg-tertiary-white px-16 py-10 shadow-xl md:max-w-[720px] md:px-32 lg:max-w-[980px] lg:px-44 lg:py-20 xl:max-w-[1250px] xl:px-60"
   >
     <span class="text-5xl">😍</span>
-    <h4 class="my-4 text-2xl font-bold tracking-wide text-center">
+    <h4 class="my-4 text-center text-2xl font-bold tracking-wide">
       {{ starterKit.title }}
     </h4>
     <p class="text-center">
@@ -24,15 +24,15 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import { ContentDetailsCard, Button } from "../../components";
+import { mapState } from 'vuex'
+import { ContentDetailsCard, Button } from '../../components'
 
 export default {
   components: { ContentDetailsCard, Button },
   computed: {
     ...mapState({
-      starterKit: (state) => state.starterKit,
-    }),
-  },
-};
+      starterKit: (state) => state.starterKit
+    })
+  }
+}
 </script>

@@ -1,6 +1,6 @@
 <template>
   <main class="w-full overflow-hidden">
-      <Hero />
+    <Hero />
     <div>
       <svg
         class="overflow-hidden"
@@ -16,35 +16,35 @@
           points="2560 0 2560 100 0 100"
         ></polygon>
       </svg>
-      <div class="w-full pb-[35rem] bg-background-green">
+      <div class="w-full bg-background-green pb-[35rem]">
         <div class="w-full -translate-y-16">
           <Content />
         </div>
-        <div class="w-full sm:mt-20 mt-0 sm:mb-60 mb-32">
+        <div class="mb-32 mt-0 w-full sm:mb-60 sm:mt-20">
           <CSSComponents />
         </div>
         <div class="w-full">
           <JavascriptComponents />
         </div>
-        <div class="w-full sm:mt-60 mt-32">
+        <div class="mt-32 w-full sm:mt-60">
           <ComplexDocumentation />
         </div>
       </div>
     </div>
-    <div class="bg-background-gray github-background-img">
+    <div class="github-background-img bg-background-gray">
       <div
-        class="w-full lg:-translate-y-72 -translate-y-96 md:block inline-block"
+        class="inline-block w-full -translate-y-96 md:block lg:-translate-y-72"
       >
         <BeautifulExamplePages />
       </div>
-      <div class="w-full lg:ml-40 sm:ml-20">
+      <div class="w-full sm:ml-20 lg:ml-40">
         <OpenSource />
       </div>
       <div class="w-full translate-y-32">
         <StarterKit />
       </div>
     </div>
-    <div class="w-full pt-96 bg-footer-green">
+    <div class="w-full bg-footer-green pt-96">
       <Footer />
     </div>
   </main>
@@ -60,13 +60,13 @@ import {
   BeautifulExamplePages,
   OpenSource,
   StarterKit,
-  Footer,
-} from "../sections/home";
+  Footer
+} from '../sections/home'
 
-import { triangle } from "../assets/home";
+import { triangle } from '../assets/home'
 export default {
   data() {
-    return { triangle };
+    return { triangle }
   },
   components: {
     Hero,
@@ -77,7 +77,7 @@ export default {
     BeautifulExamplePages,
     OpenSource,
     StarterKit,
-    Footer,
-  },
-};
+    Footer
+  }
+}
 </script>

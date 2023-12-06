@@ -1,16 +1,16 @@
 <template>
-  <section class="container-wider flex lg:flex-row flex-col">
-    <div class="lg:w-1/2 w-full h-full flex justify-center items-start">
-      <div class="lg:w-[25rem] w-[35rem] bg-secondary-green rounded-lg">
+  <section class="container-wider flex flex-col lg:flex-row">
+    <div class="flex h-full w-full items-start justify-center lg:w-1/2">
+      <div class="w-[35rem] rounded-lg bg-secondary-green lg:w-[25rem]">
         <img loading="lazy" :src="laptop" alt="" class="rounded-t-lg" />
-        <div class="py-10 px-8 text-tertiary-white rounded-lg">
+        <div class="rounded-lg px-8 py-10 text-tertiary-white">
           <h2
-            class="font-bold md:text-lg text-2xl tracking-wide mb-2 sm:text-start text-center"
+            class="mb-2 text-center text-2xl font-bold tracking-wide sm:text-start md:text-lg"
           >
             {{ contentBanner.title }}
           </h2>
           <p
-            class="md:text-sm text-lg font-extralight sm:text-start text-center"
+            class="text-center text-lg font-extralight sm:text-start md:text-sm"
           >
             {{ contentBanner.description }}
           </p>
@@ -18,7 +18,7 @@
       </div>
     </div>
     <div
-      class="lg:w-1/2 w-full grid sm:grid-cols-2 grid-cols-1 gap-x-20 gap-y-10 px-10 py-28 mx-auto"
+      class="mx-auto grid w-full grid-cols-1 gap-x-20 gap-y-10 px-10 py-28 sm:grid-cols-2 lg:w-1/2"
     >
       <div v-for="contentCard in contentCards" :key="contentCard.id">
         <ContentCard :contentCard="contentCard" />
@@ -28,24 +28,24 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import { ContentCard } from "../../components";
-import { laptop } from "../../assets/home";
+import { mapState } from 'vuex'
+import { ContentCard } from '../../components'
+import { laptop } from '../../assets/home'
 
 export default {
   data() {
     return {
-      laptop,
-    };
+      laptop
+    }
   },
   components: {
-    ContentCard,
+    ContentCard
   },
   computed: {
     ...mapState({
       contentCards: (state) => state.contentCards,
-      contentBanner: (state) => state.contentBanner,
-    }),
-  },
-};
+      contentBanner: (state) => state.contentBanner
+    })
+  }
+}
 </script>

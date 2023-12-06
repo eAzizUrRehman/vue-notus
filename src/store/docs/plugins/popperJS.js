@@ -1,21 +1,21 @@
 export default {
-  title: "Vue Notus Popperjs",
-  topline: "TOOLTIP & POPOVER POSITIONING ENGINE",
+  title: 'Vue Notus Popperjs',
+  topline: 'TOOLTIP & POPOVER POSITIONING ENGINE',
   contentList: [
     {
       id: 1,
-      title: "Usage",
-      link: "/",
+      title: 'Usage',
+      link: '/'
     },
     {
       id: 2,
-      title: "Example",
-      link: "/",
+      title: 'Example',
+      link: '/'
     },
     {
       id: 3,
-      title: "Props",
-      link: "/",
-    },
-  ],
-};
+      title: 'Props',
+      link: '/'
+    }
+  ]
+}
